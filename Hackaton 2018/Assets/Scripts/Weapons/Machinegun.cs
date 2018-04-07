@@ -36,7 +36,19 @@ public class Machinegun : AWeapon
 		base.Awake();
 	}
 
-    private bool cooling;
+    private bool m_cooling;
+    private bool cooling
+    {
+        get
+        {
+            return m_cooling;
+        }
+        set
+        {
+            m_cooling = value;
+            animator.SetBool("cooling", value);
+        }
+    }
 
     private bool Overheated
     {

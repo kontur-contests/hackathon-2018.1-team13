@@ -172,32 +172,13 @@ public class Soldier : EnemyController
 		//Debug.Log("shoot");
 		animator.SetTrigger(w.trigger);
 
-		RaycastAttack(ray);
+		RaycastAttack(ray, weapon.damage, weapon.range);
 
 		yield return new WaitForSeconds(1 - w.delay);
 		behaviuor = Behaviour.idle;
 	}
 
-	private bool RaycastAttack(Ray ray)
-	{
-		bool output = false;
-
-		RaycastHit[] hitInfo = Physics.RaycastAll(ray, weapon.range);
-		hitInfo = hitInfo.OrderBy((x) => x.distance).ToArray();
-		foreach (RaycastHit hit in hitInfo)
-		{
-			IHitable hitable = hit.transform.GetComponent<IHitable>();
-			if (hitable != null && hit.distance > 0.3f)
-			{
-				AttackInfo aInfo = new AttackInfo(weapon.damage, ray.direction, hit.point, hit.normal);
-				hitable.OnHit(aInfo);
-				output = true;
-				if (aInfo.blocked)
-					break;
-			}
-		}
-		return output;
-	}
+	
 
 	private bool Detect()
 	{

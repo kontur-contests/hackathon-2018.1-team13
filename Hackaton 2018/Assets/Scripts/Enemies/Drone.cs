@@ -142,17 +142,29 @@ public class Drone : EnemyController
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotStep);
 
         if (droneState == State.Attack || droneState == State.Wait || !inFireRange 
-            || !IsAgressive() || Vector3.Angle(deltaVector, transform.forward) < 15)
+            || !IsAgressive())
+            return;
+
+        var angle = Vector3.Angle(deltaVector, transform.forward);
+
+        if (angle > 15)
             return;
 
         StartCoroutine(Attack());
-              
-
     }
+    [SerializeField]
+    private float weaponSpread = 0.5f;
 
     protected IEnumerator Attack()
     {
         droneState = State.Attack;
+
+        yield return new WaitForSeconds(0.3f);
+
+        Vector3 direction = Spread(weaponSpread) * transform.forward;
+        Ray ray = new Ray(shootingPoint.position, direction);
+        Debug.DrawRay(shootingPoint.position, direction, Color.green, 2f);
+        RaycastAttack(ray, 1, 10);
         yield return new WaitForSeconds(1);
         Debug.Log("Pew");
         droneState = State.Idle;

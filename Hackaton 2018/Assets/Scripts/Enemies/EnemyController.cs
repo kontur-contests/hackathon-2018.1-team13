@@ -71,6 +71,27 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
+    protected bool RaycastAttack(Ray ray, float damage, float range)
+    {
+        bool output = false;
+
+        RaycastHit[] hitInfo = Physics.RaycastAll(ray, range);
+        hitInfo = hitInfo.OrderBy((x) => x.distance).ToArray();
+        foreach (RaycastHit hit in hitInfo)
+        {
+            IHitable hitable = hit.transform.GetComponent<IHitable>();
+            if (hitable != null && hit.distance > 0.3f)
+            {
+                AttackInfo aInfo = new AttackInfo(damage, ray.direction, hit.point, hit.normal);
+                hitable.OnHit(aInfo);
+                output = true;
+                if (aInfo.blocked)
+                    break;
+            }
+        }
+        return output;
+    }
+
     protected Quaternion Spread(float spread)
     {
         float rnd = (Random.value - 0.5f) * spread;

@@ -11,7 +11,7 @@ public class InfinityWagon : MonoBehaviour {
 	public void Update () {
 
 		gameObject.transform.position = BaseRoad.instance.GetPosition( position );
-		Vector3 rotation = BaseRoad.instance.GetPosition( position + 1 );
+		Vector3 rotation = BaseRoad.instance.GetPosition( position - 1 );
 		gameObject.transform.LookAt( rotation );
 
 	}

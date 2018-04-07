@@ -20,7 +20,13 @@ public class Machinegun : AWeapon
     [SerializeField]
     private float currentHeat = 0;
 
-
+    public float HeatBar
+    {
+        get
+        {
+            return Mathf.Clamp01(currentHeat / heatCap);
+        }
+    }
 
     private LineRenderer lineRend;
 
@@ -30,19 +36,29 @@ public class Machinegun : AWeapon
 		base.Awake();
 	}
 
+    private bool cooling;
+
     private bool Overheated
     {
         get
-        {
+        { 
             return currentHeat > heatCap;
         }
     }
+    
 
-	private void Update()
+    public override void Reset()
+    {
+        base.Reset();
+        cooling = false;
+        currentHeat = 0;
+    }
+
+    private void Update()
 	{
         if (Overheated)
         {
-            if (!inAction)
+            if (!inAction && !cooling)
             {
                 StartCoroutine(Owerheat());
             }
@@ -50,22 +66,22 @@ public class Machinegun : AWeapon
 
         if (PlayerController.input.b_LMB)
 		{
-			if (!inAction)
-			{
-				if (!Overheated)
-					StartCoroutine(Primary());
-				else
-					Debug.Log("Overheated");
+			if (!inAction && !cooling)
+			{				
+				StartCoroutine(Primary());				
 			}
 		}
 
-        if (!inAction && currentHeat > 0)
+        if ( currentHeat > 0)
         {
             currentHeat -= heatLoose * Time.deltaTime;
             if (currentHeat < 0)
                 currentHeat = 0;
         }
-	}
+
+        PlayerController.instance.HeatIndicator.value = HeatBar;
+
+    }
 	
 	float spread = 1.5f;
 	float damage = 1f;
@@ -114,15 +130,17 @@ public class Machinegun : AWeapon
 	private IEnumerator Owerheat()
 	{
 		inAction = true;
+        cooling = true;
         yield return new WaitForSeconds(overheatPunishnent);
         animator.SetTrigger("Owerheat");
         Debug.Log("Owerheat");
-        while (currentHeat >= 0)
+        inAction = false;
+        while (currentHeat > 0)
         {
             currentHeat -= heatLoose * Time.deltaTime;
             yield return null;
         }
         currentHeat = 0;
-        inAction = false;
+        cooling = false;   
 	}
 }

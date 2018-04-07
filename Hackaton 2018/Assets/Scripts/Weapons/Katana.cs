@@ -31,6 +31,9 @@ public class Katana : AWeapon
 	float damage = 0.34f;
 	float cooldown = 0.5f;
 	float distance = 1.5f;
+    int attackCounter = 0;
+
+    const int ATTACK_ANIMATIONS_COUNT = 2;
 
 	private IEnumerator Primary()
 	{
@@ -44,10 +47,11 @@ public class Katana : AWeapon
 		Debug.DrawRay(origin, direction, Color.red, 2f);
 
 		animator.SetTrigger("fire");
+
+        animator.SetInteger ("Rand", attackCounter++ % ATTACK_ANIMATIONS_COUNT);
 		//lineRend.enabled = true;
 		//lineRend.SetPosition(0, lineRend.transform.position);
 		//lineRend.SetPosition(1, ray.origin + ray.direction);
-		Debug.Log("fistfuck");
 
 		RaycastHit[] hitInfo = Physics.RaycastAll(ray);
 		hitInfo = hitInfo.OrderBy((x) => x.distance).ToArray();

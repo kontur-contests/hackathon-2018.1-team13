@@ -154,7 +154,7 @@ public class Drone : EnemyController
         if (angle > 15)
             return;
 
-       // StartCoroutine(Attack());
+        StartCoroutine(Attack());
     }
     [SerializeField]
     private float weaponSpread = 0.5f;

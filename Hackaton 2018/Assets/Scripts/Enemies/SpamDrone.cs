@@ -35,7 +35,8 @@ public class SpamDrone : Drone
 
     protected override bool IsAgressive()
     {
-        return base.IsAgressive() && GameCore.instance.aggrsive;
+        return false;
+        //return base.IsAgressive() && GameCore.instance.aggrsive;
     }
 
 

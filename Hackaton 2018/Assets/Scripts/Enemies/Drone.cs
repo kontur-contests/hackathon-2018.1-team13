@@ -5,7 +5,6 @@ using UnityEngine;
 public class Drone : MonoBehaviour, IHitable
 {
 
-    [SerializeField]
     Transform target;
 
     [SerializeField]
@@ -15,11 +14,11 @@ public class Drone : MonoBehaviour, IHitable
     float forceAdjStep = 1;
 
     [SerializeField]
-    float rotSpeed = 1;
+    float lookAtSpeed = 50;
 
 
-    //
-    public float angularStability = 0.3f;
+    [SerializeField]
+    float angularStability = 0.3f;
 
 
 
@@ -28,6 +27,7 @@ public class Drone : MonoBehaviour, IHitable
     protected virtual void Awake()
     {
         ragdoll = GetComponent<Rigidbody>();
+        target = GameObject.Find("Player").transform;
     }
 
     // Use this for initialization
@@ -37,21 +37,22 @@ public class Drone : MonoBehaviour, IHitable
 
     void FixedUpdate()
     {
+        //height stabilization
         curForce -= forceAdjStep * ragdoll.velocity.y;
 
-        ragdoll.AddForce(Vector3.up * Time.deltaTime * curForce, ForceMode.Impulse);
-       
+
+        ragdoll.AddForce(Vector3.up * Time.deltaTime * curForce, ForceMode.Impulse);       
         var targetVel = Vector3.Lerp(ragdoll.angularVelocity, Vector3.zero, Time.deltaTime * angularStability);
         ragdoll.angularVelocity = targetVel;
+
+
+
     }
       
 
-	// Update is called once per frame
-	void Update () {
-
-     
-
-      var rotStep = Time.deltaTime * rotSpeed;
+	void Update ()
+    {
+      var rotStep = Time.deltaTime * lookAtSpeed;
         var targetRot = Quaternion.LookRotation(target.position - transform.position);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotStep);
         

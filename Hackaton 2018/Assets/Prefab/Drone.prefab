@@ -200,6 +200,7 @@ MonoBehaviour:
   curForce: 10
   forceAdjStep: 0.5
   rotSpeed: 40
+  angularStability: 0.3
 --- !u!135 &135419845798249924
 SphereCollider:
   m_ObjectHideFlags: 1

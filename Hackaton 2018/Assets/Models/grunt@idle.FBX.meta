@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 203f41064e3ca8146bcc052b9c9217fa
+timeCreated: 1523129342
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bone_chest
+    100002: bone_head
+    100004: bone_head_nub
+    100006: bone_left_arm
+    100008: bone_left_calf
+    100010: bone_left_clavicle
+    100012: bone_left_foot
+    100014: bone_left_forearm
+    100016: bone_left_hand
+    100018: bone_left_hip
+    100020: bone_left_toe
+    100022: bone_left_toe_nub
+    100024: bone_neck
+    100026: bone_pelvis
+    100028: bone_pelvis_nub
+    100030: bone_right_arm
+    100032: bone_right_calf
+    100034: bone_right_clavicle
+    100036: bone_right_foot
+    100038: bone_right_forearm
+    100040: bone_right_hand
+    100042: bone_right_hip
+    100044: bone_right_toe
+    100046: bone_right_toe_nub
+    100048: bone_stomach
+    100050: Box002
+    100052: grunt
+    100054: //RootNode
+    100056: IK Chain001
+    100058: IK Chain002
+    100060: IK Chain003
+    100062: IK Chain004
+    100064: IK Chain005
+    100066: IK Chain006
+    400000: bone_chest
+    400002: bone_head
+    400004: bone_head_nub
+    400006: bone_left_arm
+    400008: bone_left_calf
+    400010: bone_left_clavicle
+    400012: bone_left_foot
+    400014: bone_left_forearm
+    400016: bone_left_hand
+    400018: bone_left_hip
+    400020: bone_left_toe
+    400022: bone_left_toe_nub
+    400024: bone_neck
+    400026: bone_pelvis
+    400028: bone_pelvis_nub
+    400030: bone_right_arm
+    400032: bone_right_calf
+    400034: bone_right_clavicle
+    400036: bone_right_foot
+    400038: bone_right_forearm
+    400040: bone_right_hand
+    400042: bone_right_hip
+    400044: bone_right_toe
+    400046: bone_right_toe_nub
+    400048: bone_stomach
+    400050: Box002
+    400052: grunt
+    400054: //RootNode
+    400056: IK Chain001
+    400058: IK Chain002
+    400060: IK Chain003
+    400062: IK Chain004
+    400064: IK Chain005
+    400066: IK Chain006
+    2100000: 'Material #89'
+    2300000: Box002
+    3300000: Box002
+    4300000: Box002
+    4300002: grunt
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: grunt
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

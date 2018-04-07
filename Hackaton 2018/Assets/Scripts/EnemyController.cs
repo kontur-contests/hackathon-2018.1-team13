@@ -259,7 +259,7 @@ public class EnemyController : MonoBehaviour
 		if (hits > 0)
 		{
 			if (awareness < awareMax)
-				awareness += hits * Time.deltaTime;
+				awareness += hits * Time.deltaTime * 0.5f;
 			return true;
 		}
 		else
@@ -315,7 +315,7 @@ public class EnemyController : MonoBehaviour
 			t += Time.deltaTime / time;
 			yield return null;
 		}
-		gameObject.SetActive(false);
+		// gameObject.SetActive(false);
 		yield return null;
 	}
 

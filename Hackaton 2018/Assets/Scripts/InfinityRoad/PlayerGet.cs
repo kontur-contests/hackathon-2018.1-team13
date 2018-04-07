@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerGet : MonoBehaviour {
 
-	void OnCollisionEnter3D(Collision coll) {
+	void OnTriggerEnter(Collider coll) {
 		if (coll.gameObject.tag == "Player") {
-			print("Test");
+			coll.gameObject.transform.SetParent (gameObject.transform.parent);
 		}
 	}
 }

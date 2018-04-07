@@ -14,6 +14,16 @@ public class BaseRoad : MonoBehaviour {
 	public float curvePower = 0.1f;
 	public float zOffset = 50f;
 
+	public Vector3 GetPosition(float deltaPosition, bool notUseCurve)
+	{
+		if (notUseCurve) {
+			return new Vector3 (deltaPosition * xOffset, 0, 0);
+		} else {
+			return GetPosition ( deltaPosition);
+		}
+	}
+
+
 	public Vector3 GetPosition(float deltaPosition)
 	{
 		return new Vector3 (deltaPosition * xOffset, 0, 0) + GetCurve ( deltaPosition );

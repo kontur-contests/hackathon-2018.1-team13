@@ -133,7 +133,10 @@ public class Railgun : AWeapon
                 currentHeat = 0;
         }
 
-        PlayerController.instance.HeatIndicator.value = HeatBar;
+        PlayerController.instance.HeatIndicator.fillAmount = HeatBar;
+        Color col = PlayerController.instance.HeatIndicator.color;
+        col.a = HeatBar;
+        PlayerController.instance.HeatIndicator.color = col;
 	}
 
 	private IEnumerator Owerheat()

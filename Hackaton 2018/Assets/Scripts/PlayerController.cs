@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum LookState { free, aim, locked }
 public enum CharacterState { crouch, walk, run, jump, inair}
@@ -12,7 +13,7 @@ public class PlayerController : MonoBehaviour, IHitable
 	public static PlayerController instance;
 	public static PlayerInput input;
 
-    public UnityEngine.UI.Slider HeatIndicator;
+    public Image HeatIndicator;
 
     [HideInInspector]	public CharacterController characterController;
 	[HideInInspector]	public Camera cameraController;

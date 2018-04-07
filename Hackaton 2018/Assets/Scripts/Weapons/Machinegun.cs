@@ -86,6 +86,7 @@ public class Machinegun : AWeapon
 	float spread = 1.5f;
 	float damage = 1f;
 	float recoil = 3f;
+    float effectTime = 0.01f;
 	float cooldown = 0.15f;
 
 	private IEnumerator Primary()
@@ -125,8 +126,9 @@ public class Machinegun : AWeapon
 		}
 		PlayerController.instance.m_cameraRot *= Quaternion.Euler(-recoil, 0, 0);
 
-		yield return new WaitForSeconds(cooldown);
+        yield return new WaitForSeconds(effectTime);
 		lineRend.enabled = false;
+		yield return new WaitForSeconds(cooldown - effectTime);
 		inAction = false;
 	}
 

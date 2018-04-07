@@ -682,6 +682,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &839379784 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1867227807657976, guid: 09465dc4d23c91c46b98f03597489d88,
+    type: 2}
+  m_PrefabInternal: {fileID: 1549565978}
+--- !u!45 &839379790
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839379784}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 0f09ac0579f1446469a9303c50f15225, type: 2}
 --- !u!1 &858706226
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,6 +977,21 @@ Prefab:
     - target: {fileID: 224995735845920288, guid: 09465dc4d23c91c46b98f03597489d88,
         type: 2}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20772772332996956, guid: 09465dc4d23c91c46b98f03597489d88,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20772772332996956, guid: 09465dc4d23c91c46b98f03597489d88,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20772772332996956, guid: 09465dc4d23c91c46b98f03597489d88,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

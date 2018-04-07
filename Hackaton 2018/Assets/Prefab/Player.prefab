@@ -851,6 +851,9 @@ MonoBehaviour:
   stateLook: 0
   m_characterRot: {x: 0, y: 0, z: 0, w: 0}
   m_cameraRot: {x: 0, y: 0, z: 0, w: 0}
+  weapons:
+  - {fileID: 114743504163868636}
+  - {fileID: 114116205551910090}
   speedNormal: 2
   speedSprint: 4
   speedCrouch: 1

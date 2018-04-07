@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour, IHitable
 
 	[Header("Weapons")]
 	private int current_weapon = 0;
-	// public AWeapon[] weapons;
+	public AWeapon[] weapons;
 
 	private static float health = 10f;
 	private static float max_health = 10f;
@@ -151,6 +151,16 @@ public class PlayerController : MonoBehaviour, IHitable
 		else
 		{
 			stateCharacter = CharacterState.walk;
+		}
+
+		if (input.b_SwitchWeapon != -1 && input.b_SwitchWeapon < weapons.Length)
+		{
+			if (weapons[current_weapon].CanUnequip() && weapons[input.b_SwitchWeapon].CanEquip())
+			{
+				weapons[current_weapon].gameObject.SetActive(false);
+				current_weapon = input.b_SwitchWeapon;
+				weapons[current_weapon].gameObject.SetActive(true);
+			}
 		}
 	}
 

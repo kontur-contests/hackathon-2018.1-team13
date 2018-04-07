@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Drone : EnemyController
 {
-
     Transform aimTarget;
 
     Transform moveTarget;
@@ -39,8 +38,6 @@ public class Drone : EnemyController
     [SerializeField]
     public float hoverHeight = 4;
 
-
-
     protected Rigidbody ragdoll;
 
     protected virtual void Awake()
@@ -56,7 +53,9 @@ public class Drone : EnemyController
 	}
 
     void FixedUpdate()
-    {        
+    {
+        if (dead)
+            return;
         HeightStabilization();       
         AngularStabilization();
         MoveToTarget();
@@ -88,7 +87,6 @@ public class Drone : EnemyController
             }
         }
 
-
     }
 
     void MoveToTarget()
@@ -108,18 +106,21 @@ public class Drone : EnemyController
 
     protected virtual void Update ()
     {
+        if (dead)
+            return;
         //aim
         var rotStep = Time.deltaTime * lookAtSpeed;
         var targetRot = Quaternion.LookRotation(aimTarget.position - transform.position);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotStep);
     }
 
-    public virtual void OnHit(AttackInfo aInfo)
-    {     
+    public override bool OnTakeDamage(BodyPart part, AttackInfo aInfo)
+    {
         ragdoll.AddForceAtPosition(aInfo.impulse * aInfo.damage * 5, aInfo.point, ForceMode.Impulse);
         ragdoll.maxAngularVelocity = maxAngularVelocity;
         ragdoll.angularVelocity = transform.InverseTransformVector(aInfo.impulse) * maxAngularVelocity;
 
-        aInfo.damage *= 0.5f;
+        return base.OnTakeDamage(part, aInfo);
+      
     }
 }

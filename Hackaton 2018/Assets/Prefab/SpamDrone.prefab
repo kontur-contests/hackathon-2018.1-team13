@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23784019628034230}
   - component: {fileID: 54812176770783650}
   - component: {fileID: 114369750701275818}
+  - component: {fileID: 114843084723195098}
   m_Layer: 0
   m_Name: SpamDrone
   m_TagString: Untagged
@@ -154,7 +155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1001589675013838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 3.4, z: 17.54}
+  m_LocalPosition: {x: 2.113, y: 3.4, z: 17.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4118660127886758}
@@ -400,6 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea2ba6b0059abf41a317ca3ba686c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aware: 0
+  see: 0
   curForce: 10
   forceAdjStep: 2
   hoverForce: 4
@@ -418,6 +421,9 @@ MonoBehaviour:
   spamText:
   - BUY
   - BITCOINS
+  aggroText:
+  - DIE
+  - SUFFER
 --- !u!114 &114774531180525320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -455,6 +461,20 @@ MonoBehaviour:
     BITCOINS
 
     !!!'
+--- !u!114 &114843084723195098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1001589675013838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54e347bd8634214cb07e3948ec4fa29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+  setKinimatick: 0
+  damage_mod: 1
 --- !u!114 &114988491745344262
 MonoBehaviour:
   m_ObjectHideFlags: 1

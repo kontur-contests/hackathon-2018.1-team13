@@ -10,14 +10,17 @@ public class BodyPart : MonoBehaviour, IHitable
 
 	[SerializeField]
 	private ParticleType particle = ParticleType.blood;
-	
-	public float damage_mod = 1f;
+
+    [SerializeField]
+    bool setKinimatick = true;
+
+    public float damage_mod = 1f;
 
 	private void Awake()
 	{
 		enemy = GetComponentInParent<EnemyController>();
 		rb = GetComponentInParent<Rigidbody>();
-		rb.isKinematic = true;
+		rb.isKinematic = setKinimatick;
 	}
 
 	public void OnHit(AttackInfo aInfo)

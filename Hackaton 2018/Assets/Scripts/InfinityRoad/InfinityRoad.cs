@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Block : MonoBehaviour{
 	public GameObject entity;
-	public Vector3 basePosition;
 	public Vector3 offset;
 	public float position;
 	public float maxPosition;
@@ -15,50 +14,49 @@ public class Block : MonoBehaviour{
 		position = position + dPosition;
 		if (position >= maxPosition) {
 			position = position - maxPosition;
-		}
 
-		entity.transform.position = basePosition + position * offset;
+			road.AddBlock (position);
+			Destroy (gameObject);
+			return;
+		}
+		entity.transform.position = road.basePosition + BaseRoad.instance.GetPosition( position );
 	}
 
 	// Update is called once per frame
 	void Update () {
-		Move (Time.deltaTime * road.speed);
+		Move (Time.deltaTime * BaseRoad.instance.speed);
 	}
 }
-
+	
 public class InfinityRoad : MonoBehaviour {
-
 	public GameObject[] blockPrefab;
-	public List<Block> blocks;
-	public Vector3 startPosition;
-	public Vector3 offset;
-	public float speed;
-	public float maxcount;
+	public Vector3 basePosition;
+	public float maxLenght = 20;
 
 	// Use this for initialization
 	void Start () {
+		basePosition = this.transform.localPosition;
 		Generate ();
 	}
 
 	// Use this for initialization
 	void Generate () {
-		for (int i = 0; i < maxcount; i++) {
-			Block newBlock = AddBlock ();
-			newBlock.Move (i);
+		for (int i = 0; i < maxLenght; i++) {
+			 AddBlock (i);
 		}
 	}
 
-	Block AddBlock()
+	public void AddBlock( float position )
 	{
 		GameObject randomBlock = blockPrefab [Random.Range (0, blockPrefab.GetLength (0))];
 		GameObject entity = Instantiate (randomBlock);
 		Block newBlock = entity.AddComponent<Block> ();
 		newBlock.entity = entity;
-		newBlock.basePosition = startPosition;
-		newBlock.offset = offset;
-		newBlock.maxPosition = maxcount;
+		newBlock.maxPosition = maxLenght;
 		newBlock.road = this;
+		newBlock.position = position;
+		newBlock.Move (0);
 
-		return newBlock;
+		newBlock.transform.SetParent (gameObject.transform);
 	}
 }

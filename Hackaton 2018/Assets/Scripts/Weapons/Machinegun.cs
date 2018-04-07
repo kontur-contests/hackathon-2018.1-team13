@@ -81,7 +81,7 @@ public class Machinegun : AWeapon
 
         PlayerController.instance.HeatIndicator.fillAmount = HeatBar;
         Color col = PlayerController.instance.HeatIndicator.color;
-        col.a = HeatBar;
+        col.a = cooling ? 1 : HeatBar;
         PlayerController.instance.HeatIndicator.color = col;
 
     }

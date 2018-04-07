@@ -652,6 +652,7 @@ GameObject:
   - component: {fileID: 124013931860115038}
   - component: {fileID: 81711627042232234}
   - component: {fileID: 114893973034045542}
+  - component: {fileID: 45096547437201064}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -1327,7 +1328,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1599,6 +1600,14 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1763605675734978}
   m_Mesh: {fileID: 4300002, guid: ecc6f75cd64a4914a91160871533c355, type: 3}
+--- !u!45 &45096547437201064
+Skybox:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867227807657976}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 0f09ac0579f1446469a9303c50f15225, type: 2}
 --- !u!81 &81711627042232234
 AudioListener:
   m_ObjectHideFlags: 1

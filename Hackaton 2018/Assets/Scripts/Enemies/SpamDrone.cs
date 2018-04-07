@@ -54,6 +54,13 @@ public class SpamDrone : Drone
         m_background.color = GameCore.instance.aggrsive ? Color.red : Color.green;
     }
 
+    public override bool OnTakeDamage(BodyPart part, AttackInfo aInfo)
+    {
+        if (!GameCore.instance.aggrsive)
+            GameCore.instance.aggrsive = true;
+        return base.OnTakeDamage(part, aInfo);
+    }
+
     void ShowText()
     {
         if (!GameCore.instance.aggrsive)

@@ -117,7 +117,49 @@ NavMeshSettings:
 Transform:
   m_PrefabParentObject: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705,
     type: 2}
-  m_PrefabInternal: {fileID: 949722493}
+  m_PrefabInternal: {fileID: 224019837}
+--- !u!1001 &224019837
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 502926463}
+    m_Modifications:
+    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &455536507
 Prefab:
   m_ObjectHideFlags: 0
@@ -436,48 +478,6 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 3abc34ea4eb9ddc4c8d8f3ce8fc6735a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d63d105e645374478d6da07ada3db33, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &949722493
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 502926463}
-    m_Modifications:
-    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474686207522940, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &990134600 stripped
 Transform:

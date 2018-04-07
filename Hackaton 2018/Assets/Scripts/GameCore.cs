@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameCore : MonoBehaviour
 {
 	public static GameCore instance { private set; get; }
+	public Jukebox jukebox;
 
     public bool aggrsive = false;
     
@@ -17,5 +18,11 @@ public class GameCore : MonoBehaviour
 			DontDestroyOnLoad(gameObject);
 			instance = this;
 		}
+	}
+
+	private void Start()
+	{
+		jukebox = GetComponentInChildren<Jukebox>();
+		jukebox.PlayIdle();
 	}
 }

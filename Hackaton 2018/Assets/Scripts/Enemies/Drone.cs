@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drone : MonoBehaviour, IHitable
+public class Drone : EnemyController
 {
 
     Transform aimTarget;

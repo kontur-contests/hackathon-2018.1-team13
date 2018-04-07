@@ -255,40 +255,6 @@ public class Soldier : EnemyController
 		}
 	}
 
-	public bool OnTakeDamage(BodyPart part, AttackInfo aInfo)
-	{
-		if (dead)
-			return true;
-
-		health -= aInfo.damage;
-		if (health > 0)
-		{
-			aware = true;
-			awareness = 10;
-			lastDetectedPos = PlayerController.instance.transform.position;
-			Debug.Log(gameObject.name + ": Got Hit");
-			return false;
-		}
-		else
-		{
-			Debug.Log(gameObject.name + ": Diez");
-			dead = true;
-			foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
-			{
-				rb.gameObject.layer = LayerMask.NameToLayer("Ignore");
-				rb.isKinematic = false;
-				// rb.AddForceAtPosition(aInfo.impulse * 1, aInfo.point, ForceMode.Impulse);
-				// rb.AddTorque(aInfo.impulse * 10, ForceMode.Impulse);
-			}
-			capsule.gameObject.layer = LayerMask.NameToLayer("Ignore");
-			animator.enabled = false;
-			agent.enabled = false;
-			StopAllCoroutines();
-			StartCoroutine(FadeOut(10, 2));
-			return true;
-		}
-	}
-
 	private IEnumerator FadeOut(float delay, float time)
 	{
 		yield return new WaitForSeconds(delay);

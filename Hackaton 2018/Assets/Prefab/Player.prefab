@@ -665,7 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4494048513465972}
   - component: {fileID: 95052378091030902}
-  - component: {fileID: 114368761948334848}
+  - component: {fileID: 114593606938802300}
   m_Layer: 5
   m_Name: w_railgun
   m_TagString: Untagged
@@ -1635,24 +1635,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114368761948334848
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1984516836408896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f81ba659c5b512e4c9eee49fb6486924, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  equiped: 1
-  inAction: 0
-  heatCap: 10
-  heatLoose: 4
-  heatGainPerShot: 1
-  overheatPunishnent: 0.01
-  currentHeat: 0
 --- !u!114 &114502489859033416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1681,6 +1663,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 5fb24f0915a708540a70d32b071cb3ef, type: 2}
+--- !u!114 &114593606938802300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1984516836408896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f67f2f931c4ac41bdf28a9f7265925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equiped: 1
+  inAction: 0
+  heatCap: 10
+  heatLoose: 0.2
+  heatGainPerShot: 0.1
+  overheatPunishnent: 0.01
+  currentHeat: 0
 --- !u!114 &114687095137719820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1700,11 +1700,11 @@ MonoBehaviour:
   weapons:
   - {fileID: 114743504163868636}
   - {fileID: 114079498853030436}
-  - {fileID: 114368761948334848}
-  speedNormal: 2
-  speedSprint: 4
-  speedCrouch: 1
-  jumpPower: 3
+  - {fileID: 114593606938802300}
+  speedNormal: 3
+  speedSprint: 5
+  speedCrouch: 2
+  jumpPower: 4
   gravityPull: 3
 --- !u!114 &114743504163868636
 MonoBehaviour:
@@ -1770,7 +1770,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 4}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.05
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1785,8 +1785,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.6965513, g: 0, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 0}
+      key0: {r: 1, g: 0.6, b: 0, a: 1}
+      key1: {r: 1, g: 0.6413793, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}

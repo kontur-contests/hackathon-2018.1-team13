@@ -10,7 +10,8 @@ public class EnemyController : MonoBehaviour
 	protected Animator animator;
 	protected Collider capsule;
 
-	protected float health = 3;
+	[SerializeField]
+	protected float health = 5;
 	protected bool dead = false;
 
 	protected float visionRange = 5f;
@@ -79,7 +80,7 @@ public class EnemyController : MonoBehaviour
 			t += Time.deltaTime / time;
 			yield return null;
 		}
-        Destroy(this.gameObject);
+        // Destroy(this.gameObject);
 		//gameObject.SetActive(false);
 		yield return null;
 	}

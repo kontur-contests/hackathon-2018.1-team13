@@ -6,6 +6,7 @@ public class GameCore : MonoBehaviour
 {
 	public static GameCore instance { private set; get; }
 
+    public bool aggrsive = false;
     
     private void Awake()
 	{

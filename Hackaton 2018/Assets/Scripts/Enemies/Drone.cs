@@ -30,6 +30,9 @@ public class Drone : MonoBehaviour, IHitable
     [SerializeField]
     float speedClamp = 1;
 
+    [SerializeField]
+    float maxAngularVelocity = 50;
+
 
 
     protected Rigidbody ragdoll;
@@ -80,8 +83,8 @@ public class Drone : MonoBehaviour, IHitable
     public virtual void OnHit(AttackInfo aInfo)
     {     
         ragdoll.AddForceAtPosition(aInfo.impulse * aInfo.damage * 5, aInfo.point, ForceMode.Impulse);
-        ragdoll.maxAngularVelocity = 50;
-        ragdoll.angularVelocity = transform.InverseTransformVector(aInfo.impulse) * 50;
+        ragdoll.maxAngularVelocity = maxAngularVelocity;
+        ragdoll.angularVelocity = transform.InverseTransformVector(aInfo.impulse) * maxAngularVelocity;
 
         aInfo.damage *= 0.5f;
     }

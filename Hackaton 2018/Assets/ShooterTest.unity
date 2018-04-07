@@ -881,6 +881,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114743504163868636, guid: 09465dc4d23c91c46b98f03597489d88,
+        type: 2}
+      propertyPath: sound_ready
+      value: 
+      objectReference: {fileID: 8300000, guid: 99c27ea9a523db943b1b1c03d06ea505, type: 3}
+    - target: {fileID: 1288901464033344, guid: 09465dc4d23c91c46b98f03597489d88, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827067181414456, guid: 09465dc4d23c91c46b98f03597489d88, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09465dc4d23c91c46b98f03597489d88, type: 2}
   m_IsPrefabParent: 0

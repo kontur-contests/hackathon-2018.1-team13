@@ -5,8 +5,11 @@ using System.Linq;
 
 public class Katana : AWeapon
 {
-	private void Start()
+	public AudioClip sound_ready;
+
+	private void OnEnable()
 	{
+		audio.PlayOneShot( sound_ready );
 	}
 
 	private void Update()

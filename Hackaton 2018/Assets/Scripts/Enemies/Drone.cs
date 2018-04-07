@@ -5,7 +5,9 @@ using UnityEngine;
 public class Drone : MonoBehaviour, IHitable
 {
 
-    Transform target;
+    Transform aimTarget;
+
+    Transform moveTarget;
 
     [SerializeField]
     float curForce = 10;
@@ -16,9 +18,17 @@ public class Drone : MonoBehaviour, IHitable
     [SerializeField]
     float lookAtSpeed = 50;
 
-
     [SerializeField]
     float angularStability = 0.3f;
+
+    [SerializeField]
+    float targetDistanceSqr = 9;
+
+    [SerializeField]
+    float moveForce = 1;
+
+    [SerializeField]
+    float speedClamp = 1;
 
 
 
@@ -27,7 +37,8 @@ public class Drone : MonoBehaviour, IHitable
     protected virtual void Awake()
     {
         ragdoll = GetComponent<Rigidbody>();
-        target = GameObject.Find("Player").transform;
+        aimTarget = GameObject.Find("Player").transform;
+        moveTarget = aimTarget;
     }
 
     // Use this for initialization
@@ -39,22 +50,30 @@ public class Drone : MonoBehaviour, IHitable
     {
         //height stabilization
         curForce -= forceAdjStep * ragdoll.velocity.y;
+        ragdoll.AddForce(Vector3.up * Time.deltaTime * curForce, ForceMode.Impulse);
 
 
-        ragdoll.AddForce(Vector3.up * Time.deltaTime * curForce, ForceMode.Impulse);       
-        var targetVel = Vector3.Lerp(ragdoll.angularVelocity, Vector3.zero, Time.deltaTime * angularStability);
-        ragdoll.angularVelocity = targetVel;
+        //angularVelocity stabilization
+        var targetAngVel = Vector3.Lerp(ragdoll.angularVelocity, Vector3.zero, Time.deltaTime * angularStability);
+        ragdoll.angularVelocity = targetAngVel;
 
+        //moving to target
+        Vector3 relativePos = moveTarget.position - gameObject.transform.position;
+        var vel = ragdoll.velocity;
+        var sqDisToRange = relativePos.sqrMagnitude - targetDistanceSqr;
 
+        var targetLinVel = Vector3.Lerp(ragdoll.velocity, relativePos.normalized * sqDisToRange, Time.deltaTime * moveForce);
 
+        ragdoll.velocity = new Vector3(targetLinVel.x, Mathf.Clamp( vel.y, -speedClamp, speedClamp), targetLinVel.z);
     }
       
 
 	void Update ()
     {
+        //aim
       var rotStep = Time.deltaTime * lookAtSpeed;
-        var targetRot = Quaternion.LookRotation(target.position - transform.position);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotStep);
+    var targetRot = Quaternion.LookRotation(aimTarget.position - transform.position);
+    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotStep);
         
     }
 

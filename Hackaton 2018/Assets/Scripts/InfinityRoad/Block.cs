@@ -14,7 +14,7 @@ public class Block : MonoBehaviour{
 	{
 		position = position + dPosition;
 		if (position >= maxPosition) {
-			position = position - maxPosition;
+			position = position - maxPosition * 2;
 
 			road.AddBlock (position);
 			Destroy (gameObject);

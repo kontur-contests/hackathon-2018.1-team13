@@ -33,6 +33,8 @@ public class InfinityRoad : MonoBehaviour {
 		newBlock.notMoveByZ = notMoveByZ;
 		newBlock.Move (0);
 
+		newBlock.transform.Rotate (new Vector3( Random.Range (0, 30), Random.Range (0, 180), 0));
+
 		newBlock.transform.SetParent (gameObject.transform);
 	}
 }

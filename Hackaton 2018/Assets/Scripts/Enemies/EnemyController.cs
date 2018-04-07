@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
 	protected Vector3 pointCenter	{	get	{	return transform.position + Vector3.up * agent.height * 0.5f;	}	}
 
 
-	public bool OnTakeDamage(BodyPart part, AttackInfo aInfo)
+	public virtual bool OnTakeDamage(BodyPart part, AttackInfo aInfo)
 	{
 		if (dead)
 			return true;
@@ -50,10 +50,16 @@ public class EnemyController : MonoBehaviour
 				// rb.AddForceAtPosition(aInfo.impulse * 1, aInfo.point, ForceMode.Impulse);
 				// rb.AddTorque(aInfo.impulse * 10, ForceMode.Impulse);
 			}
-			capsule.gameObject.layer = LayerMask.NameToLayer("Ignore");
-			animator.enabled = false;
+
+            if (capsule != null)
+			    capsule.gameObject.layer = LayerMask.NameToLayer("Ignore");
+
+            if (animator != null)
+                animator.enabled = false;
+
 			if (agent)
 				agent.enabled = false;
+
 			StopAllCoroutines();
 			StartCoroutine(FadeOut(10, 2));
 			return true;
@@ -69,7 +75,8 @@ public class EnemyController : MonoBehaviour
 			t += Time.deltaTime / time;
 			yield return null;
 		}
-		// gameObject.SetActive(false);
+        Destroy(this.gameObject);
+		//gameObject.SetActive(false);
 		yield return null;
 	}
 }

@@ -14,6 +14,8 @@ public class HitableObject : MonoBehaviour, IHitable
 	protected virtual void Awake()
 	{
 		ragdoll = GetComponent<Rigidbody>();
+		if (!ragdoll)
+			ragdoll = gameObject.AddComponent<Rigidbody>();
 	}
 
 	#region IHitable

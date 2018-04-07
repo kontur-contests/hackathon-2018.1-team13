@@ -30,7 +30,7 @@ public class Katana : AWeapon
 
 	float damage = 0.34f;
 	float cooldown = 0.5f;
-	float distance = 0.85f;
+	float distance = 1.5f;
 
 	private IEnumerator Primary()
 	{

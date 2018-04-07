@@ -30,6 +30,7 @@ public class SpamDrone : Drone
     private void Start()
     {
         spamIndex = Random.Range(0, spamText.Length);
+        droneAnimator.SetInteger("State", 0);
     }
 
     protected override bool IsAgressive()

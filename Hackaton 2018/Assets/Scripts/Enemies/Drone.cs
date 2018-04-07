@@ -15,6 +15,9 @@ public class Drone : EnemyController
     float curForce = 10;
 
     [SerializeField]
+    protected Animator droneAnimator;
+
+    [SerializeField]
     float forceAdjStep = 1;
 
     public float hoverForce = 5.0F;
@@ -64,6 +67,7 @@ public class Drone : EnemyController
     {
         ragdoll = GetComponent<Rigidbody>();
         aimTarget = GameObject.Find("Player").transform;
+        droneAnimator.SetInteger("State", 1);
         moveTarget = aimTarget;
     }
 

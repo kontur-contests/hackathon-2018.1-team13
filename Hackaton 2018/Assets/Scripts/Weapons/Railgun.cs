@@ -86,7 +86,7 @@ public class Railgun : AWeapon
 				IHitable hitable = hit.transform.GetComponent<IHitable>();
 				if (hitable != null && (Object)hitable != PlayerController.instance)
 				{
-					AttackInfo aInfo = new AttackInfo(damage, direction * 0.01f, hit.point, hit.normal);
+					AttackInfo aInfo = new AttackInfo(damage, direction * 0.001f, hit.point, hit.normal);
 					hitable.OnHit(aInfo);
 				}
 			}

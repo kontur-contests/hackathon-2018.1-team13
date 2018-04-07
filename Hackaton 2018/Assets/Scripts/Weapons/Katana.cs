@@ -31,6 +31,9 @@ public class Katana : AWeapon
 	{
 		inAction = true;
 
+		if (audio)
+			audio.PlayOneShot( audio.clip );
+
 		Vector3 origin = PlayerController.instance.cameraController.transform.position;
 		Vector3 direction = PlayerController.instance.cameraController.transform.forward;
 		

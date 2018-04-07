@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9d2e740083979224c9ee62ef9fad5a65
+guid: cf12f7da82d4ccb4fbb2dba406e196cd
 timeCreated: 1523139402
 licenseType: Free
 ModelImporter:
@@ -14,15 +14,9 @@ ModelImporter:
     100012: Bone007
     100014: Box004
     100016: Camera001
-    100018: marker00
-    100020: marker01
-    100022: marker02
-    100024: marker03
-    100026: marker04
-    100028: marker05
-    100030: Object001
-    100032: Point001
-    100034: //RootNode
+    100018: Object001
+    100020: Point001
+    100022: //RootNode
     400000: Bone001
     400002: Bone002
     400004: Bone003
@@ -32,42 +26,18 @@ ModelImporter:
     400012: Bone007
     400014: Box004
     400016: Camera001
-    400018: marker00
-    400020: marker01
-    400022: marker02
-    400024: marker03
-    400026: marker04
-    400028: marker05
-    400030: Object001
-    400032: Point001
-    400034: //RootNode
+    400018: Object001
+    400020: Point001
+    400022: //RootNode
     2100000: 'Material #29'
     2100002: 'Material #28'
     2100004: 'Material #30'
     2300000: Box004
-    2300002: marker00
-    2300004: marker01
-    2300006: marker02
-    2300008: marker03
-    2300010: marker04
-    2300012: marker05
-    2300014: Object001
+    2300002: Object001
     3300000: Box004
-    3300002: marker00
-    3300004: marker01
-    3300006: marker02
-    3300008: marker03
-    3300010: marker04
-    3300012: marker05
-    3300014: Object001
+    3300002: Object001
     4300000: Box004
     4300002: Object001
-    4300004: marker00
-    4300006: marker01
-    4300008: marker02
-    4300010: marker03
-    4300012: marker04
-    4300014: marker05
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -126,7 +96,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
@@ -143,7 +113,8 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 9d2e740083979224c9ee62ef9fad5a65,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

@@ -12,9 +12,12 @@ public abstract class AWeapon : MonoBehaviour
 	public virtual bool CanUnequip() {	return !inAction;	}
 	public virtual bool CanEquip()	{	return equiped;	}
 
+	protected new AudioSource audio;
+
 	protected virtual void Awake()
 	{
 		animator = GetComponent<Animator>();
+		audio = GetComponent<AudioSource>();
 	}
 
 	protected Quaternion Spread(float spread)

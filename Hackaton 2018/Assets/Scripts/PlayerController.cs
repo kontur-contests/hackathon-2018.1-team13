@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour, IHitable
 
     [HideInInspector]	public CharacterController characterController;
 	[HideInInspector]	public Camera cameraController;
+	[HideInInspector]	public AudioSource audioController;
 
 	private CharacterState stateCharacter = CharacterState.walk;
 	public LookState stateLook = LookState.free;
@@ -48,12 +49,17 @@ public class PlayerController : MonoBehaviour, IHitable
 	private static float health = 10f;
 	private static float max_health = 10f;
 
+	[Header("Sounds")]
+	public AudioClip sound_jump;
+	public AudioClip sound_land;
+
 	private void Awake()
 	{
 		instance = this;
 
 		characterController = GetComponent<CharacterController>();
 		cameraController = GetComponentInChildren<Camera>();
+		audioController = GetComponent<AudioSource>();
 		input = new PlayerInput();
 
 		m_characterRot = transform.rotation;
@@ -123,6 +129,8 @@ public class PlayerController : MonoBehaviour, IHitable
 			if (characterController.isGrounded)
 			{
 				Debug.Log("land");
+				if (audioController)
+					audioController.PlayOneShot( sound_land );
 				stateCharacter = CharacterState.walk;
 				moveDir.y = 0;
 			}
@@ -202,6 +210,8 @@ public class PlayerController : MonoBehaviour, IHitable
 			Debug.Log("jump");
 			stateCharacter = CharacterState.inair;
 			moveDir.y = jumpPower;
+			if (audioController)
+				audioController.PlayOneShot( sound_jump );
 		}
 		else if (stateCharacter == CharacterState.inair)
 		{

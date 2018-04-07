@@ -5,8 +5,11 @@ using System.Linq;
 
 public class Katana : AWeapon
 {
-	private void Start()
+	public AudioClip sound_ready;
+
+	private void OnEnable()
 	{
+		audio.PlayOneShot( sound_ready );
 	}
 
 	private void Update()
@@ -30,6 +33,9 @@ public class Katana : AWeapon
 	private IEnumerator Primary()
 	{
 		inAction = true;
+
+		if (audio)
+			audio.PlayOneShot( audio.clip );
 
 		Vector3 origin = PlayerController.instance.cameraController.transform.position;
 		Vector3 direction = PlayerController.instance.cameraController.transform.forward;

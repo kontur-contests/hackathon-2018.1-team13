@@ -54,13 +54,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 1450010206121412, guid: f6913a5004d28364cac554cd124c13aa, type: 2}
   sound:
+  - {fileID: 8300000, guid: 1398476d7d3ae9e49b21edba0e493eb3, type: 3}
+  - {fileID: 8300000, guid: 3e48d20e0ff96304f9f49ca214cf13b9, type: 3}
+  - {fileID: 8300000, guid: d5a6d6f1b80b97a4b9dc9331a1688cbe, type: 3}
   - {fileID: 0}
+  - {fileID: 8300000, guid: 746751d6159515b47bf6c97944817920, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 5787362ff59985c4e8176ed3c67f9279, type: 3}
 --- !u!114 &114752199402746256
 MonoBehaviour:
   m_ObjectHideFlags: 1

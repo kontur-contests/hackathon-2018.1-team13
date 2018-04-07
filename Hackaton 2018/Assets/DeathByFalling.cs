@@ -14,7 +14,7 @@ public class DeathByFalling : MonoBehaviour {
 
 	void Update() {
 		if (deathPlayer != null) {
-			deathPlayer.transform.position = deathPlayer.transform.position + new Vector3( Time.deltaTime * BaseRoad.instance.speed * BaseRoad.instance.xOffset, Time.deltaTime * 20, 0);
+			deathPlayer.transform.position = deathPlayer.transform.position + new Vector3( Time.deltaTime * BaseRoad.instance.speed * -BaseRoad.instance.xOffset, Time.deltaTime * 20, 0);
 		}
 	}
 }

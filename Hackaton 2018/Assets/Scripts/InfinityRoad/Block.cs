@@ -13,8 +13,8 @@ public class Block : MonoBehaviour{
 	public void Move( float dPosition )
 	{
 		position = position + dPosition;
-		if (position <= -maxPosition) {
-			position = position + maxPosition * 2;
+		if (position <= -maxPosition + BaseRoad.instance.playerPosition) {
+			position = position + maxPosition * 2 + BaseRoad.instance.playerPosition;
 
 			road.AddBlock (position);
 			Destroy (gameObject);

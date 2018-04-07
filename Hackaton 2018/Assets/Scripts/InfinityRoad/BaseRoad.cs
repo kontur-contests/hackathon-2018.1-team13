@@ -13,6 +13,12 @@ public class BaseRoad : MonoBehaviour {
 	public float realPosition = 0;
 	public float curvePower = 0.1f;
 	public float zOffset = 50f;
+	public float playerPosition = 0f;
+
+	public void PlayerPosition(Vector3 position)
+	{
+		playerPosition = position.x / xOffset;
+	}
 
 	public Vector3 GetPosition(float deltaPosition, bool notUseCurve)
 	{
@@ -22,7 +28,6 @@ public class BaseRoad : MonoBehaviour {
 			return GetPosition ( deltaPosition);
 		}
 	}
-
 
 	public Vector3 GetPosition(float deltaPosition)
 	{

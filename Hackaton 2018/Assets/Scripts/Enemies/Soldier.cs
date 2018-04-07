@@ -4,26 +4,9 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Linq;
 
-public class EnemyController : MonoBehaviour
+public class Soldier : EnemyController
 {
-	private NavMeshAgent agent;
-	private Animator animator;
-	private Collider capsule;
-
-	private float health = 3;
-	private bool dead = false;
-
-	private float visionRange = 5f;
-	[SerializeField]
-	private bool aware = false;
-	[SerializeField]
-	private bool see = false;
-	private float awareness = 0f;
-	private float awareMax = 10f;
-	private float awareAt = 2f;
 	private Vector3 startPos;
-	private Vector3 lastDetectedPos;
-	private Vector3 pointCenter	{	get	{	return transform.position + Vector3.up * agent.height * 0.5f;	}	}
 
 	enum Behaviour { idle, attack, move, inair };
 	[SerializeField]

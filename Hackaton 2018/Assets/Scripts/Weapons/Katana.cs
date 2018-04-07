@@ -23,7 +23,7 @@ public class Katana : AWeapon
 		}
 	}
 
-	float damage = 0.34f;
+	float damage = 5f;
 	float cooldown = 0.5f;
 	float distance = 1.5f;
     int attackCounter = 0;

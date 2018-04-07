@@ -10,7 +10,8 @@ public class EnemyController : MonoBehaviour
 	protected Animator animator;
 	protected Collider capsule;
 
-	protected float health = 3;
+	[SerializeField]
+	protected float health = 5;
 	protected bool dead = false;
 
 	protected float visionRange = 5f;
@@ -24,6 +25,10 @@ public class EnemyController : MonoBehaviour
 	protected Vector3 lastDetectedPos;
 	protected Vector3 pointCenter	{	get	{	return transform.position + Vector3.up * agent.height * 0.5f;	}	}
 
+	private void Start()
+	{
+		capsule = GetComponent<Collider>();
+	}
 
 	public virtual bool OnTakeDamage(BodyPart part, AttackInfo aInfo)
 	{
@@ -75,7 +80,7 @@ public class EnemyController : MonoBehaviour
 			t += Time.deltaTime / time;
 			yield return null;
 		}
-        Destroy(this.gameObject);
+        // Destroy(this.gameObject);
 		//gameObject.SetActive(false);
 		yield return null;
 	}

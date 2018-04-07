@@ -106,7 +106,7 @@ public class Drone : EnemyController
     }
 
 
-    void Update ()
+    protected virtual void Update ()
     {
         //aim
         var rotStep = Time.deltaTime * lookAtSpeed;

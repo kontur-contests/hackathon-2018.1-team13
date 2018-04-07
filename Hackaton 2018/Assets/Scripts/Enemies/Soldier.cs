@@ -255,19 +255,6 @@ public class Soldier : EnemyController
 		}
 	}
 
-	private IEnumerator FadeOut(float delay, float time)
-	{
-		yield return new WaitForSeconds(delay);
-		float t = 0;
-		while (t < 1)
-		{
-			t += Time.deltaTime / time;
-			yield return null;
-		}
-		// gameObject.SetActive(false);
-		yield return null;
-	}
-
 	public enum EnumWeapon { fists, melee, revolver }
 	public abstract class EnemyWeapon
 	{

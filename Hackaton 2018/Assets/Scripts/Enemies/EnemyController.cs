@@ -24,6 +24,10 @@ public class EnemyController : MonoBehaviour
 	protected Vector3 lastDetectedPos;
 	protected Vector3 pointCenter	{	get	{	return transform.position + Vector3.up * agent.height * 0.5f;	}	}
 
+	private void Start()
+	{
+		capsule = GetComponent<Collider>();
+	}
 
 	public virtual bool OnTakeDamage(BodyPart part, AttackInfo aInfo)
 	{

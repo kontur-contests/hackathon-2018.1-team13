@@ -12,7 +12,9 @@ public class PlayerController : MonoBehaviour, IHitable
 	public static PlayerController instance;
 	public static PlayerInput input;
 
-	[HideInInspector]	public CharacterController characterController;
+    public UnityEngine.UI.Slider HeatIndicator;
+
+    [HideInInspector]	public CharacterController characterController;
 	[HideInInspector]	public Camera cameraController;
 
 	private CharacterState stateCharacter = CharacterState.walk;
@@ -157,8 +159,10 @@ public class PlayerController : MonoBehaviour, IHitable
 		{
 			if (weapons[current_weapon].CanUnequip() && weapons[input.b_SwitchWeapon].CanEquip())
 			{
-				weapons[current_weapon].gameObject.SetActive(false);
-				current_weapon = input.b_SwitchWeapon;
+                HeatIndicator.gameObject.SetActive(input.b_SwitchWeapon!=0);
+                weapons[current_weapon].gameObject.SetActive(false);
+                weapons[current_weapon].Reset();
+                current_weapon = input.b_SwitchWeapon;
 				weapons[current_weapon].gameObject.SetActive(true);
 			}
 		}

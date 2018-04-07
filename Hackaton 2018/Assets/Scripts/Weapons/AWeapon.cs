@@ -22,4 +22,6 @@ public abstract class AWeapon : MonoBehaviour
 		float rnd = (Random.value - 0.5f) * spread;
 		return Quaternion.Euler(rnd, rnd, rnd);
 	}
+
+    public virtual void Reset() { }
 }

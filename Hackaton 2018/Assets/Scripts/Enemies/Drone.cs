@@ -112,7 +112,6 @@ public class Drone : MonoBehaviour, IHitable
         var rotStep = Time.deltaTime * lookAtSpeed;
         var targetRot = Quaternion.LookRotation(aimTarget.position - transform.position);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotStep);
-        
     }
 
     public virtual void OnHit(AttackInfo aInfo)

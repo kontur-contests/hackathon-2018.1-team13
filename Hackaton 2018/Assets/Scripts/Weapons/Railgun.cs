@@ -12,15 +12,13 @@ public class Railgun : AWeapon
     private float heatLoose = 0.2f;
 
     [SerializeField]
-    private float heatGainPerShot = 0.1f;
+    private float heatGainPerShot = 0.5f;
 
     [SerializeField]
     private float overheatPunishnent = 0.01f;
 
     [SerializeField]
     private float currentHeat = 0;
-
-
 
     private LineRenderer lineRend;
 
@@ -29,6 +27,14 @@ public class Railgun : AWeapon
 		lineRend = GetComponentInChildren<LineRenderer>();
 		base.Awake();
 	}
+	
+    public float HeatBar
+    {
+        get
+        {
+            return Mathf.Clamp01(currentHeat / heatCap);
+        }
+    }
 
     private bool Overheated
     {
@@ -38,14 +44,28 @@ public class Railgun : AWeapon
         }
     }
 
+    private bool cooling;
+
+    public override void Reset()
+    {
+        base.Reset();
+        cooling = false;
+        currentHeat = 0;
+    }
+
 	float damage = 0.1f;
 	float distance = 20f;
 
 	private void FixedUpdate()
 	{
-		if (inAction)
+		if (inAction && !cooling)
 		{
 			currentHeat += heatGainPerShot;
+			if (Overheated)
+			{
+				StartCoroutine(Owerheat());
+				return;
+			}
 
 			lineRend.enabled = true;
 			RaycastHit hit;
@@ -96,14 +116,15 @@ public class Railgun : AWeapon
             }
         }
 
-        if (PlayerController.input.b_LMB)
-		{
-			inAction = true;
-		}
-		else
-		{
-			inAction = false;
-		}
+		if (!cooling)
+			if (PlayerController.input.b_LMB)
+			{
+				inAction = true;
+			}
+			else
+			{
+				inAction = false;
+			}
 
         if (!inAction && currentHeat > 0)
         {
@@ -111,11 +132,14 @@ public class Railgun : AWeapon
             if (currentHeat < 0)
                 currentHeat = 0;
         }
+
+        PlayerController.instance.HeatIndicator.value = HeatBar;
 	}
 
 	private IEnumerator Owerheat()
 	{
 		inAction = true;
+        cooling = true;
         yield return new WaitForSeconds(overheatPunishnent);
         animator.SetTrigger("Owerheat");
         Debug.Log("Owerheat");
@@ -125,6 +149,7 @@ public class Railgun : AWeapon
             yield return null;
         }
         currentHeat = 0;
+        cooling = false;
         inAction = false;
 	}
 }

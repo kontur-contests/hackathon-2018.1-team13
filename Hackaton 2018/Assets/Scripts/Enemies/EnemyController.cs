@@ -71,7 +71,13 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-	private IEnumerator FadeOut(float delay, float time)
+    protected Quaternion Spread(float spread)
+    {
+        float rnd = (Random.value - 0.5f) * spread;
+        return Quaternion.Euler(rnd, rnd, rnd);
+    }
+
+    private IEnumerator FadeOut(float delay, float time)
 	{
 		yield return new WaitForSeconds(delay);
 		float t = 0;

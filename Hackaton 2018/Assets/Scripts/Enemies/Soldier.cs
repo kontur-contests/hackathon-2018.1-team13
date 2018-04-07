@@ -157,12 +157,6 @@ public class Soldier : EnemyController
 	{
 		weapon = new EnemyFists();
 	}
-	
-	private Quaternion Spread(float spread)
-	{
-		float rnd = (Random.value - 0.5f) * spread;
-		return Quaternion.Euler(rnd, rnd, rnd);
-	}
 
 	protected virtual IEnumerator Attack(Vector3 target, bool melee = false)
 	{

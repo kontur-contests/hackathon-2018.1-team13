@@ -32,6 +32,11 @@ public class SpamDrone : Drone
         spamIndex = Random.Range(0, spamText.Length);
     }
 
+    protected override bool IsAgressive()
+    {
+        return base.IsAgressive() && GameCore.instance.aggrsive;
+    }
+
 
     protected  override void Update()
     {

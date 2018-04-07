@@ -6,6 +6,9 @@ public class Drone : EnemyController
 {
     Transform aimTarget;
 
+    [SerializeField]
+    Transform shootingPoint;
+
     Transform moveTarget;
 
     [SerializeField]
@@ -38,7 +41,24 @@ public class Drone : EnemyController
     [SerializeField]
     public float hoverHeight = 4;
 
+    [SerializeField]
+    float fireRange = 34;
+
     protected Rigidbody ragdoll;
+
+    protected enum State
+    {
+        Idle,
+        Attack,
+        Wait
+    }
+
+    protected State droneState = State.Idle;
+
+    protected virtual bool IsAgressive()
+    {
+        return true;
+    }
 
     protected virtual void Awake()
     {
@@ -48,15 +68,15 @@ public class Drone : EnemyController
     }
 
     // Use this for initialization
-    void Start () {
+    void Start() {
         transform.LookAt(aimTarget);
-	}
+    }
 
     void FixedUpdate()
     {
         if (dead)
             return;
-        HeightStabilization();       
+        HeightStabilization();
         AngularStabilization();
         MoveToTarget();
     }
@@ -83,18 +103,24 @@ public class Drone : EnemyController
             {
                 float upwardSpeed = ragdoll.velocity.y;
                 float lift = hoverError * hoverForce - upwardSpeed * hoverDamp;
-                ragdoll.AddForce(Mathf.Clamp( lift, -curForce, curForce) * Vector3.up);
+                ragdoll.AddForce(Mathf.Clamp(lift, -curForce, curForce) * Vector3.up);
             }
         }
 
     }
+
+
+    bool inFireRange = false;
 
     void MoveToTarget()
     {
         //Don't move on hit
         Vector3 relativePos = moveTarget.position - gameObject.transform.position;
         var vel = ragdoll.velocity;
-        var sqDisToRange = relativePos.sqrMagnitude - targetDistanceSqr;
+        var distSqMag = relativePos.sqrMagnitude;
+        var sqDisToRange = distSqMag - targetDistanceSqr;
+
+        inFireRange = distSqMag < fireRange;
 
         var targetLinVel = Vector3.Lerp(ragdoll.velocity, relativePos.normalized * sqDisToRange, Time.deltaTime * moveForce);
 
@@ -104,14 +130,32 @@ public class Drone : EnemyController
     }
 
 
-    protected virtual void Update ()
+    protected virtual void Update()
     {
         if (dead)
             return;
         //aim
+
         var rotStep = Time.deltaTime * lookAtSpeed;
-        var targetRot = Quaternion.LookRotation(aimTarget.position - transform.position);
+        var deltaVector = aimTarget.position - transform.position;
+        var targetRot = Quaternion.LookRotation(deltaVector);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotStep);
+
+        if (droneState == State.Attack || droneState == State.Wait || !inFireRange 
+            || !IsAgressive() || Vector3.Angle(deltaVector, transform.forward) < 15)
+            return;
+
+        StartCoroutine(Attack());
+              
+
+    }
+
+    protected IEnumerator Attack()
+    {
+        droneState = State.Attack;
+        yield return new WaitForSeconds(1);
+        Debug.Log("Pew");
+        droneState = State.Idle;
     }
 
     public override bool OnTakeDamage(BodyPart part, AttackInfo aInfo)

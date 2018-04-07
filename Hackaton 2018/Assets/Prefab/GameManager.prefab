@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4150702721472756}
   - component: {fileID: 114084162501514842}
+  - component: {fileID: 114752199402746256}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -53,3 +54,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 0}
   sound: []
+--- !u!114 &114752199402746256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106376042548916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311aad362f7e6a544b7faf5e15fdc591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

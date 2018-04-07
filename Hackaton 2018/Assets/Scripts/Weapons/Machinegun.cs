@@ -5,12 +5,24 @@ using System.Linq;
 
 public class Machinegun : AWeapon
 {
-	public static int ammo;
+	[SerializeField]
+    private float heatCap = 10;
 
-	public static int ammo_current = int.MaxValue;
-	private int ammo_max = int.MaxValue;
+    [SerializeField]
+    private float heatLoose = 0.2f;
 
-	private LineRenderer lineRend;
+    [SerializeField]
+    private float heatGainPerShot = 1;
+
+    [SerializeField]
+    private float overheatPunishnent = 0.01f;
+
+    [SerializeField]
+    private float currentHeat = 0;
+
+
+
+    private LineRenderer lineRend;
 
 	protected override void Awake()
 	{
@@ -18,26 +30,41 @@ public class Machinegun : AWeapon
 		base.Awake();
 	}
 
+    private bool Overheated
+    {
+        get
+        {
+            return currentHeat > heatCap;
+        }
+    }
+
 	private void Update()
 	{
-		if (PlayerController.input.b_LMB)
+        if (Overheated)
+        {
+            if (!inAction)
+            {
+                StartCoroutine(Owerheat());
+            }
+        }
+
+        if (PlayerController.input.b_LMB)
 		{
 			if (!inAction)
 			{
-				if (ammo_current > 0)
+				if (!Overheated)
 					StartCoroutine(Primary());
 				else
-					Debug.Log("out of ammo");
+					Debug.Log("Overheated");
 			}
 		}
 
-		if (PlayerController.input.b_Reload)
-		{
-			if (!inAction)
-			{
-				StartCoroutine(Reload());
-			}
-		}
+        if (!inAction && currentHeat > 0)
+        {
+            currentHeat -= heatLoose * Time.deltaTime;
+            if (currentHeat < 0)
+                currentHeat = 0;
+        }
 	}
 	
 	float spread = 1.5f;
@@ -51,9 +78,8 @@ public class Machinegun : AWeapon
 
 		Vector3 origin = PlayerController.instance.cameraController.transform.position;
 		Vector3 direction = PlayerController.instance.cameraController.transform.forward;
-
-		ammo_current--;
-
+        currentHeat += heatGainPerShot;
+     
 		direction = Spread(spread) * direction;
 		Ray ray = new Ray(origin, direction);
 
@@ -85,20 +111,18 @@ public class Machinegun : AWeapon
 		inAction = false;
 	}
 
-	private IEnumerator Reload()
+	private IEnumerator Owerheat()
 	{
 		inAction = true;
-		if (ammo_current < ammo_max && ammo > 0)
-		{
-			animator.SetTrigger("reload");
-			Debug.Log("reload");
-			yield return new WaitForSeconds(2.5f);
-			ammo_current = Mathf.Clamp(ammo, 1, ammo_max);
-		}
-		else
-		{
-			Debug.Log("can't reload");
-		}
-		inAction = false;
+        yield return new WaitForSeconds(overheatPunishnent);
+        animator.SetTrigger("Owerheat");
+        Debug.Log("Owerheat");
+        while (currentHeat >= 0)
+        {
+            currentHeat -= heatLoose * Time.deltaTime;
+            yield return null;
+        }
+        currentHeat = 0;
+        inAction = false;
 	}
 }

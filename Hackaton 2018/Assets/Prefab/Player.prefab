@@ -1144,6 +1144,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equiped: 1
   inAction: 0
+  heatCap: 10
+  heatLoose: 4
+  heatGainPerShot: 1
+  overheatPunishnent: 0.01
+  currentHeat: 0
 --- !u!114 &114502489859033416
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -42,7 +42,7 @@ public class HitableObject : MonoBehaviour, IHitable
 			t += Time.deltaTime / time;
 			yield return null;
 		}
-		gameObject.SetActive(false);
+		// gameObject.SetActive(false);
 		yield return null;
 	}
 	#endregion

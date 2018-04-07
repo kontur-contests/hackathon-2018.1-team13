@@ -52,8 +52,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3f170369416a54db05e91bafec1f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 0}
-  sound: []
+  particle: {fileID: 1450010206121412, guid: f6913a5004d28364cac554cd124c13aa, type: 2}
+  sound:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114752199402746256
 MonoBehaviour:
   m_ObjectHideFlags: 1

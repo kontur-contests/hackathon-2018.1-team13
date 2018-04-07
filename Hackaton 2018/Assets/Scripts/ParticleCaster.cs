@@ -25,7 +25,7 @@ public class ParticleCaster : MonoBehaviour
 		Color.yellow,
 		Color.white
 	};
-	public AudioClip[] sound;
+	public AudioClip[] sound = new AudioClip[ System.Enum.GetValues(typeof(ParticleType)).Length ];
 
 	private void Awake()
 	{

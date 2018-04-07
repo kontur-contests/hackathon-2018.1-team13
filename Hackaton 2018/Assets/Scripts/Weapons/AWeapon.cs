@@ -8,9 +8,8 @@ public abstract class AWeapon : MonoBehaviour
 	protected Animator animator;
 	public bool equiped = false;
 	public bool inAction = false;
-	public bool drawn = false;
 
-	public virtual bool CanUnequip() {	return !inAction && !drawn;	}
+	public virtual bool CanUnequip() {	return !inAction;	}
 	public virtual bool CanEquip()	{	return equiped;	}
 
 	protected virtual void Awake()

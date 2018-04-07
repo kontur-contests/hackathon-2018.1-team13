@@ -22,7 +22,7 @@ public class Machinegun : AWeapon
 	{
 		if (PlayerController.input.b_LMB)
 		{
-			if (!inAction && drawn)
+			if (!inAction)
 			{
 				if (ammo_current > 0)
 					StartCoroutine(Primary());
@@ -31,25 +31,13 @@ public class Machinegun : AWeapon
 			}
 		}
 
-		if (PlayerController.input.b_RMB)
-		{
-			if (!inAction)
-				drawn = true;
-		}
-		else
-			if (!inAction)
-				drawn = false;
-
 		if (PlayerController.input.b_Reload)
 		{
-			if (!inAction && drawn)
+			if (!inAction)
 			{
 				StartCoroutine(Reload());
 			}
 		}
-
-		PlayerController.instance.stateLook = drawn ? LookState.aim : LookState.free;
-		animator.SetBool("draw", drawn);
 	}
 	
 	float spread = 1.5f;

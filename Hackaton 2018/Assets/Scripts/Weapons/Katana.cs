@@ -5,27 +5,19 @@ using System.Linq;
 
 public class Katana : AWeapon
 {
+	private void Start()
+	{
+	}
+
 	private void Update()
 	{
 		if (PlayerController.input.b_LMB)
 		{
-			if (!inAction && drawn)
+			if (!inAction)
 			{
 				StartCoroutine(Primary());
 			}
 		}
-
-		if (PlayerController.input.b_RMB)
-		{
-			if (!inAction)
-				drawn = true;
-		}
-		else
-			if (!inAction)
-				drawn = false;
-
-		PlayerController.instance.stateLook = drawn ? LookState.aim : LookState.free;
-		animator.SetBool("draw", drawn);
 	}
 
 	float damage = 0.34f;

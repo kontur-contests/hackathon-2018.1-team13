@@ -113,6 +113,20 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 82b8a558f2d096c46949f91397ff983f, type: 2}
+--- !u!4 &30132226 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92,
+    type: 2}
+  m_PrefabInternal: {fileID: 105347448}
+--- !u!4 &40481495 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1046323691}
+--- !u!4 &50210013 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 794d4b906790cd540a3ba60f3663add4, type: 3}
+  m_PrefabInternal: {fileID: 127020478}
 --- !u!1001 &77328869
 Prefab:
   m_ObjectHideFlags: 0
@@ -150,7 +164,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4116517349265000, guid: 1283c88c5b5a6134199338f60b2fc1bf, type: 2}
       propertyPath: m_RootOrder
-      value: 26
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1522725867475768, guid: 1283c88c5b5a6134199338f60b2fc1bf, type: 2}
       propertyPath: m_Name
@@ -322,7 +336,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1461213305
+  randomSeed: -433754982
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3634,26 +3648,26 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &105347448
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 154.4
+      value: 149.00946
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -20
+      value: -87.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 32.4
+      value: 174.03177
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3661,7 +3675,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.z
@@ -3673,11 +3687,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_RootOrder
-      value: 46
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1287071463115610, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_Name
       value: building_04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
@@ -3761,27 +3783,74 @@ Transform:
   - {fileID: 1222206726}
   - {fileID: 297750896}
   - {fileID: 1505848218}
+  - {fileID: 1174011369}
+  - {fileID: 1373596088}
+  - {fileID: 2091230850}
+  - {fileID: 1266402593}
+  - {fileID: 349178951}
+  - {fileID: 1135464284}
+  - {fileID: 1009871632}
+  - {fileID: 30132226}
+  - {fileID: 1113766172}
+  - {fileID: 1709395989}
+  - {fileID: 1855613859}
+  - {fileID: 982465705}
+  - {fileID: 1815704551}
+  - {fileID: 345242680}
+  - {fileID: 164344153}
+  - {fileID: 1320356474}
+  - {fileID: 699019023}
+  - {fileID: 1162547670}
+  - {fileID: 1171279341}
+  - {fileID: 889872019}
+  - {fileID: 1377289056}
+  - {fileID: 694497231}
+  - {fileID: 1549111287}
+  - {fileID: 2107114722}
+  - {fileID: 337857773}
+  - {fileID: 1201923347}
+  - {fileID: 2045426611}
+  - {fileID: 1943224380}
+  - {fileID: 1405092463}
+  - {fileID: 218529342}
+  - {fileID: 960921256}
+  - {fileID: 1257065433}
+  - {fileID: 2100585861}
+  - {fileID: 1646971864}
+  - {fileID: 50210013}
+  - {fileID: 710125504}
+  - {fileID: 2119969716}
+  - {fileID: 547885982}
+  - {fileID: 1872294833}
+  - {fileID: 761213074}
+  - {fileID: 618614460}
+  - {fileID: 40481495}
+  - {fileID: 450563020}
+  - {fileID: 831984593}
+  - {fileID: 846371935}
+  - {fileID: 1495806025}
+  - {fileID: 1346339701}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &127020478
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: 794d4b906790cd540a3ba60f3663add4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.91
+      value: -24.30053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 794d4b906790cd540a3ba60f3663add4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50.746483
+      value: -17.196938
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 794d4b906790cd540a3ba60f3663add4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -148.3
+      value: -6.6682434
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 794d4b906790cd540a3ba60f3663add4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3801,7 +3870,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 794d4b906790cd540a3ba60f3663add4, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 794d4b906790cd540a3ba60f3663add4, type: 3}
       propertyPath: m_LocalScale.x
@@ -3823,19 +3892,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.6
+      value: -7.9905305
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -20
+      value: -87.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 32.4
+      value: 174.03177
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3843,7 +3912,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.z
@@ -3855,33 +3924,46 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 1287071463115610, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_Name
       value: building_04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &164344153 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808,
+    type: 2}
+  m_PrefabInternal: {fileID: 1963871147}
 --- !u!1001 &192854479
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 68.4
+      value: 63.00947
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 11.5
+      value: -56.44342
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -231.4
+      value: -89.768234
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3901,7 +3983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_RootOrder
-      value: 51
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1793872686031552, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_Name
@@ -3928,19 +4010,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 154.9
+      value: 149.50946
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 51.5
+      value: -16.44342
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 104
+      value: 245.63176
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3948,7 +4030,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.z
@@ -3960,11 +4042,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_RootOrder
-      value: 49
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1820856021516862, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_Name
       value: building_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
@@ -3974,19 +4064,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 131.3
+      value: 125.90947
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10.4
+      value: -78.34342
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -104.9
+      value: 36.73176
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3994,7 +4084,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.z
@@ -4006,33 +4096,45 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_RootOrder
-      value: 48
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1978637475473510, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_Name
       value: building_05 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &218529342 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: c2b71c393170d004a8441e439f6856e7, type: 3}
+  m_PrefabInternal: {fileID: 894946372}
 --- !u!1001 &248045529
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -172.1
+      value: -177.49054
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -20
+      value: -87.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -129.3
+      value: 12.331757
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4052,7 +4154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_RootOrder
-      value: 54
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1287071463115610, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_Name
@@ -4074,19 +4176,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -173.3
+      value: -178.69054
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -18.7
+      value: -86.64342
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.1
+      value: 142.73177
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4094,7 +4196,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -4106,11 +4208,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_RootOrder
-      value: 42
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1317653839737880, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_Name
       value: building_00 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
@@ -4120,19 +4230,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.3
+      value: 0.9094696
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 23.3
+      value: -44.64342
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -152.9
+      value: -11.268234
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4140,7 +4250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.z
@@ -4152,7 +4262,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
@@ -4162,19 +4280,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -12.2
+      value: -17.59053
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8
+      value: -75.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 223.3
+      value: 364.93176
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4194,7 +4312,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_RootOrder
-      value: 58
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 1978637475473510, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_Name
@@ -4207,6 +4325,18 @@ Prefab:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 178.089
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
@@ -4275,19 +4405,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 65.4
+      value: 60.00947
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.699994
+      value: -74.64342
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -36.8
+      value: 104.83176
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4295,7 +4425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.z
@@ -4307,33 +4437,45 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &337857773 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 5e8250a355cb6934faa0c1b04bdf3993, type: 3}
+  m_PrefabInternal: {fileID: 1960476264}
 --- !u!1001 &342596865
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -66.9
+      value: -72.290535
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -39.4
+      value: -107.34342
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -240.7
+      value: -99.06824
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.y
@@ -4349,7 +4491,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_RootOrder
-      value: 61
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 1793872686031552, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_Name
@@ -4370,6 +4512,16 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &345242680 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1025301708}
+--- !u!4 &349178951 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 857655018}
 --- !u!4 &373554494 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b,
@@ -4380,23 +4532,23 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -86
+      value: -91.39053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 96.9
+      value: 28.956581
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.7
+      value: 175.33176
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4404,7 +4556,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4412,7 +4564,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4438,19 +4590,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -183.8
+      value: -189.19054
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -15.9
+      value: -83.84342
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 146.4
+      value: 288.03174
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4470,7 +4622,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_RootOrder
-      value: 57
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1820856021516862, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_Name
@@ -7930,30 +8082,30 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &436303378
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.8
+      value: 51.40947
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 65.3
+      value: -2.6434174
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -73.7
+      value: 67.93176
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_LocalRotation.y
@@ -7961,7 +8113,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7969,7 +8121,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
       propertyPath: m_LocalScale.x
@@ -7990,6 +8142,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &450563020 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808,
+    type: 2}
+  m_PrefabInternal: {fileID: 309821890}
 --- !u!1001 &455536507
 Prefab:
   m_ObjectHideFlags: 0
@@ -8027,7 +8184,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4886895064386970, guid: 09465dc4d23c91c46b98f03597489d88, type: 2}
       propertyPath: m_RootOrder
-      value: 24
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114687095137719820, guid: 09465dc4d23c91c46b98f03597489d88,
         type: 2}
@@ -8051,19 +8208,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -18.8
+      value: -24.190529
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -77.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 131.6
+      value: 273.23175
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8071,7 +8228,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.z
@@ -8083,11 +8240,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_RootOrder
-      value: 50
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1606014961688390, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_Name
       value: building_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
@@ -8177,26 +8342,26 @@ Transform:
   - {fileID: 193112976}
   - {fileID: 1285134926}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &512040802
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -41.6
+      value: -46.99053
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.3
+      value: -59.64342
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 46
+      value: 187.63176
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8204,7 +8369,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -8216,7 +8381,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
@@ -8226,23 +8399,23 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -177.7
+      value: -183.09053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 49.1
+      value: -18.843422
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -70.1
+      value: 71.53176
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8250,7 +8423,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8258,7 +8431,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -8279,24 +8452,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &547885982 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1674794563}
 --- !u!1001 &605672431
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -174.3
+      value: -179.69054
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -39.4
+      value: -107.34342
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -235.8
+      value: -94.16824
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8316,7 +8494,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_RootOrder
-      value: 60
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1793872686031552, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_Name
@@ -8337,24 +8515,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &618614460 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92,
+    type: 2}
+  m_PrefabInternal: {fileID: 149320487}
 --- !u!1001 &624451842
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 69.700005
+      value: 64.30947
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8
+      value: -75.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 127.3
+      value: 268.93176
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8374,7 +8557,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_RootOrder
-      value: 39
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1978637475473510, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_Name
@@ -8388,6 +8571,18 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 178.089
       objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
   m_IsPrefabParent: 0
@@ -8396,19 +8591,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 127.3
+      value: 121.90947
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -29.5
+      value: -97.44342
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 48
+      value: 189.63176
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8416,7 +8611,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.z
@@ -8428,15 +8623,37 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_RootOrder
-      value: 45
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1978637475473510, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_Name
       value: building_05 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &694497231 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 605672431}
+--- !u!4 &699019023 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56,
+    type: 2}
+  m_PrefabInternal: {fileID: 1471570415}
+--- !u!4 &710125504 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 898c1e45be00640448b758851c8fb29d, type: 3}
+  m_PrefabInternal: {fileID: 1819192747}
 --- !u!1001 &716073853
 Prefab:
   m_ObjectHideFlags: 0
@@ -8484,6 +8701,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4647338498755282, guid: 3d63d105e645374478d6da07ada3db33,
     type: 2}
   m_PrefabInternal: {fileID: 883182114}
+--- !u!4 &761213074 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b,
+    type: 2}
+  m_PrefabInternal: {fileID: 512040802}
 --- !u!1 &796411480
 GameObject:
   m_ObjectHideFlags: 0
@@ -8510,7 +8732,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &813369571
 Prefab:
@@ -8646,26 +8868,31 @@ Transform:
   m_LocalScale: {x: 10000, y: 10000, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &831984593 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92,
+    type: 2}
+  m_PrefabInternal: {fileID: 885233644}
 --- !u!1001 &836958362
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -38.2
+      value: -43.59053
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10.299999
+      value: -78.24342
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -155.98749
+      value: -14.355728
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8685,7 +8912,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_RootOrder
-      value: 44
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1793872686031552, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_Name
@@ -8699,27 +8926,40 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.925
       objectReference: {fileID: 0}
+    - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &846371935 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 276534638}
 --- !u!1001 &857655018
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 74
+      value: 68.60947
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10.4
+      value: -78.34342
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -189.4
+      value: -47.768234
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8727,7 +8967,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.z
@@ -8739,11 +8979,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_RootOrder
-      value: 43
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1978637475473510, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_Name
       value: building_05 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
@@ -8753,23 +9001,23 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.2
+      value: 49.80947
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 75
+      value: 7.0565796
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.3
+      value: 166.93176
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8777,7 +9025,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8785,7 +9033,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -8877,7 +9125,7 @@ Transform:
   m_LocalScale: {x: 10000, y: 10000, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &883182114
 Prefab:
@@ -8954,19 +9202,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 62.9
+      value: 57.50947
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -77.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -129.9
+      value: 11.731766
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8986,7 +9234,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8999,24 +9247,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &889872019 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 293149635}
 --- !u!1001 &894946372
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: c2b71c393170d004a8441e439f6856e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.9
+      value: 9.509469
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c2b71c393170d004a8441e439f6856e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.9
+      value: -26.043419
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c2b71c393170d004a8441e439f6856e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.1
+      value: 166.73177
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c2b71c393170d004a8441e439f6856e7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9036,7 +9289,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c2b71c393170d004a8441e439f6856e7, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c2b71c393170d004a8441e439f6856e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9111,24 +9364,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2b97d9da37a1444ab7864f2bc559705, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &960921256 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: e334a3e69913ffb4e8a33b8f16d0ec0f, type: 3}
+  m_PrefabInternal: {fileID: 1084632883}
+--- !u!4 &982465705 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56,
+    type: 2}
+  m_PrefabInternal: {fileID: 463332685}
 --- !u!1001 &982560782
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -180
+      value: -185.39053
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -48.7
+      value: -116.64342
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -188.3
+      value: -46.668243
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9148,7 +9410,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_RootOrder
-      value: 59
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1820856021516862, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_Name
@@ -9170,19 +9432,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 31
+      value: 25.60947
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8
+      value: -75.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 223.3
+      value: 364.93176
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9202,7 +9464,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_RootOrder
-      value: 36
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1978637475473510, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_Name
@@ -9216,6 +9478,18 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 178.089
       objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
   m_IsPrefabParent: 0
@@ -9224,23 +9498,23 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -173
+      value: -178.39053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 63.5
+      value: -4.4434204
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 92.3
+      value: 233.93176
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_LocalRotation.y
@@ -9248,7 +9522,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9256,7 +9530,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9282,24 +9556,82 @@ Transform:
   m_PrefabParentObject: {fileID: 4311468182605872, guid: 029c9b86a73e86f408af7b7b0199416b,
     type: 2}
   m_PrefabInternal: {fileID: 813369571}
+--- !u!1 &992070120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 992070122}
+  - component: {fileID: 992070121}
+  - component: {fileID: 992070123}
+  m_Layer: 0
+  m_Name: DeathLayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &992070121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 992070120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &992070122
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 992070120}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.2, y: 5.3, z: -56.2}
+  m_LocalScale: {x: 47.6409, y: 5, z: 198.97675}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &992070123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 992070120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98d91ec0658d7f4f9434314504d4f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1009871632 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 684737934}
 --- !u!1001 &1025301708
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -179.6
+      value: -184.99054
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -39.4
+      value: -107.34342
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -48.4
+      value: 93.23176
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9319,7 +9651,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_RootOrder
-      value: 52
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1793872686031552, guid: 3366c576e401dfe48b8d3682909102e1, type: 2}
       propertyPath: m_Name
@@ -9341,19 +9673,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 74
+      value: 68.60947
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -18.099995
+      value: -86.04341
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -83.4
+      value: 58.23176
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9361,7 +9693,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.z
@@ -9373,7 +9705,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
@@ -9383,19 +9723,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: e334a3e69913ffb4e8a33b8f16d0ec0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.93
+      value: 9.53947
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e334a3e69913ffb4e8a33b8f16d0ec0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52.3
+      value: -15.643421
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e334a3e69913ffb4e8a33b8f16d0ec0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.83
+      value: 167.46176
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e334a3e69913ffb4e8a33b8f16d0ec0f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9415,7 +9755,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e334a3e69913ffb4e8a33b8f16d0ec0f, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e334a3e69913ffb4e8a33b8f16d0ec0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9440,6 +9780,16 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e334a3e69913ffb4e8a33b8f16d0ec0f, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &1113766172 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1921273320}
+--- !u!4 &1135464284 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 836958362}
 --- !u!1 &1137844508
 GameObject:
   m_ObjectHideFlags: 0
@@ -9511,13 +9861,94 @@ Transform:
   m_LocalScale: {x: 10000, y: 10000, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &1162547670 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808,
+    type: 2}
+  m_PrefabInternal: {fileID: 1535277845}
+--- !u!4 &1171279341 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808,
+    type: 2}
+  m_PrefabInternal: {fileID: 381530115}
+--- !u!4 &1174011369 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 624451842}
+--- !u!4 &1201923347 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: eb6a076b454ec74499470f9519d7857a, type: 3}
+  m_PrefabInternal: {fileID: 528838878}
 --- !u!4 &1222206726 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b,
     type: 2}
   m_PrefabInternal: {fileID: 1974219838}
+--- !u!4 &1257065433 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: dfd62a5754ad2be4ab26dcf672e0e487, type: 3}
+  m_PrefabInternal: {fileID: 1363854569}
+--- !u!4 &1266402593 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b,
+    type: 2}
+  m_PrefabInternal: {fileID: 258718819}
+--- !u!1 &1283603026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1283603029}
+  - component: {fileID: 1283603028}
+  - component: {fileID: 1283603027}
+  m_Layer: 0
+  m_Name: DeathLayer (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1283603027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283603026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98d91ec0658d7f4f9434314504d4f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1283603028
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283603026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1283603029
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283603026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -49.5, y: -7.6, z: -61.5}
+  m_LocalScale: {x: 144.9827, y: 5, z: 183.27034}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1285134926 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4888385158243868, guid: 97cef94c43bbe2b4a82c4db056d2a25d,
@@ -9528,19 +9959,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -87.5
+      value: -92.89053
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -23.1
+      value: -91.04342
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 42.8
+      value: 184.43176
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9548,7 +9979,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.z
@@ -9560,11 +9991,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 1820856021516862, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_Name
       value: building_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
@@ -9574,19 +10013,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: ec0d9fb58453c364d86b3e5afc9879a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -173.39
+      value: -178.78053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ec0d9fb58453c364d86b3e5afc9879a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.9
+      value: -39.04342
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ec0d9fb58453c364d86b3e5afc9879a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.73
+      value: 119.901764
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ec0d9fb58453c364d86b3e5afc9879a0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9606,7 +10045,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ec0d9fb58453c364d86b3e5afc9879a0, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ec0d9fb58453c364d86b3e5afc9879a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9698,26 +10137,36 @@ Transform:
   m_LocalScale: {x: 10000, y: 10000, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &1320356474 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92,
+    type: 2}
+  m_PrefabInternal: {fileID: 248045529}
+--- !u!4 &1346339701 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 984344857}
 --- !u!1001 &1363854569
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: dfd62a5754ad2be4ab26dcf672e0e487, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.2
+      value: 41.80947
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfd62a5754ad2be4ab26dcf672e0e487, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34.8
+      value: -33.14342
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfd62a5754ad2be4ab26dcf672e0e487, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 65.9
+      value: 207.53177
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfd62a5754ad2be4ab26dcf672e0e487, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9737,7 +10186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfd62a5754ad2be4ab26dcf672e0e487, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfd62a5754ad2be4ab26dcf672e0e487, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9758,6 +10207,16 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfd62a5754ad2be4ab26dcf672e0e487, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &1373596088 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808,
+    type: 2}
+  m_PrefabInternal: {fileID: 2002928425}
+--- !u!4 &1377289056 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808,
+    type: 2}
+  m_PrefabInternal: {fileID: 982560782}
 --- !u!1 &1396673044
 GameObject:
   m_ObjectHideFlags: 0
@@ -9847,24 +10306,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1396673044}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1405092463 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
+  m_PrefabInternal: {fileID: 1684522124}
 --- !u!1001 &1471570415
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -232
+      value: -237.39053
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -60
+      value: -127.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -40.2
+      value: 101.43176
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9872,7 +10335,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.z
@@ -9884,11 +10347,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_RootOrder
-      value: 55
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1606014961688390, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_Name
       value: building_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
@@ -13336,8 +13807,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 272.283, z: 0}
+--- !u!4 &1495806025 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56,
+    type: 2}
+  m_PrefabInternal: {fileID: 1514038475}
 --- !u!1001 &1505848217
 Prefab:
   m_ObjectHideFlags: 0
@@ -13402,19 +13878,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -21.8
+      value: -27.190529
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -77.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -86.8
+      value: 54.831757
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.x
@@ -13422,7 +13898,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.z
@@ -13434,7 +13910,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
@@ -13444,19 +13928,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -183.8
+      value: -189.19054
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -51.5
+      value: -119.44342
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 91.5
+      value: 233.13176
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.x
@@ -13476,7 +13960,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_RootOrder
-      value: 56
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1820856021516862, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_Name
@@ -13493,24 +13977,3478 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1549111287 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 342596865}
+--- !u!1 &1640840727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1640840730}
+  - component: {fileID: 1640840729}
+  - component: {fileID: 1640840728}
+  m_Layer: 0
+  m_Name: Particle System (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!199 &1640840728
+ParticleSystemRenderer:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640840727}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5af60517f2d9deb43afcc753893f8393, type: 2}
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_RenderMode: 4
+  m_SortMode: 0
+  m_MinParticleSize: 0
+  m_MaxParticleSize: 0.5
+  m_CameraVelocityScale: 0
+  m_VelocityScale: 0
+  m_LengthScale: 2
+  m_SortingFudge: 0
+  m_NormalDirection: 1
+  m_RenderAlignment: 1
+  m_Pivot: {x: 0, y: 0, z: 0}
+  m_UseCustomVertexStreams: 0
+  m_VertexStreams: 00010304
+  m_Mesh: {fileID: 4300000, guid: 904034110cc66054db55661d576f81f2, type: 3}
+  m_Mesh1: {fileID: 0}
+  m_Mesh2: {fileID: 0}
+  m_Mesh3: {fileID: 0}
+  m_MaskInteraction: 0
+--- !u!198 &1640840729
+ParticleSystem:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640840727}
+  serializedVersion: 5
+  lengthInSec: 5
+  simulationSpeed: 1
+  stopAction: 0
+  looping: 1
+  prewarm: 1
+  playOnAwake: 1
+  useUnscaledTime: 0
+  autoRandomSeed: 1
+  useRigidbodyForVelocity: 1
+  startDelay:
+    serializedVersion: 2
+    minMaxState: 0
+    scalar: 0
+    minScalar: 0
+    maxCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    minCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  moveWithTransform: 0
+  moveWithCustomTransform: {fileID: 0}
+  scalingMode: 1
+  randomSeed: -1944894055
+  InitialModule:
+    serializedVersion: 3
+    enabled: 1
+    startLifetime:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 20
+      minScalar: 5
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startSpeed:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 65
+      minScalar: 5
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startColor:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    startSize:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startSizeY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startSizeZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startRotationX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1.5707963
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startRotationY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1.5707963
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startRotation:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    randomizeRotationDirection: 0
+    maxNumParticles: 1000
+    size3D: 0
+    rotation3D: 1
+    gravityModifier:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  ShapeModule:
+    serializedVersion: 5
+    enabled: 1
+    type: 5
+    angle: 25
+    length: 5
+    boxThickness: {x: 0, y: 0, z: 0}
+    radiusThickness: 1
+    donutRadius: 0.2
+    m_Position: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Scale: {x: 1, y: 1, z: 1}
+    placementMode: 0
+    m_MeshMaterialIndex: 0
+    m_MeshNormalOffset: 0
+    m_Mesh: {fileID: 0}
+    m_MeshRenderer: {fileID: 0}
+    m_SkinnedMeshRenderer: {fileID: 0}
+    m_UseMeshMaterialIndex: 0
+    m_UseMeshColors: 1
+    alignToDirection: 0
+    randomDirectionAmount: 0
+    sphericalDirectionAmount: 0
+    randomPositionAmount: 1
+    radius:
+      value: 1
+      mode: 0
+      spread: 0
+      speed:
+        serializedVersion: 2
+        minMaxState: 0
+        scalar: 1
+        minScalar: 1
+        maxCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 2
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - serializedVersion: 2
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        minCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 2
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - serializedVersion: 2
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    arc:
+      value: 360
+      mode: 0
+      spread: 0
+      speed:
+        serializedVersion: 2
+        minMaxState: 0
+        scalar: 1
+        minScalar: 1
+        maxCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 2
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - serializedVersion: 2
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        minCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 2
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - serializedVersion: 2
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+  EmissionModule:
+    enabled: 1
+    serializedVersion: 4
+    rateOverTime:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0.5
+      minScalar: 10
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    rateOverDistance:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    m_BurstCount: 0
+    m_Bursts: []
+  SizeModule:
+    enabled: 0
+    curve:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxes: 0
+  RotationModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    curve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0.7853982
+      minScalar: 0.7853982
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxes: 0
+  ColorModule:
+    enabled: 0
+    gradient:
+      serializedVersion: 2
+      minMaxState: 1
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+  UVModule:
+    enabled: 0
+    mode: 0
+    frameOverTime:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 0.9999
+      minScalar: 0.9999
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    startFrame:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    tilesX: 1
+    tilesY: 1
+    animationType: 0
+    rowIndex: 0
+    cycles: 1
+    uvChannelMask: -1
+    flipU: 0
+    flipV: 0
+    randomRow: 1
+    sprites:
+    - sprite: {fileID: 0}
+  VelocityModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    speedModifier:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    inWorldSpace: 0
+  InheritVelocityModule:
+    enabled: 0
+    m_Mode: 0
+    m_Curve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  ForceModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    inWorldSpace: 0
+    randomizePerFrame: 0
+  ExternalForcesModule:
+    enabled: 0
+    multiplier: 1
+  ClampVelocityModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    magnitude:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxis: 0
+    inWorldSpace: 0
+    multiplyDragByParticleSize: 1
+    multiplyDragByParticleVelocity: 1
+    dampen: 0
+    drag:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  NoiseModule:
+    enabled: 0
+    strength:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    strengthY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    strengthZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxes: 0
+    frequency: 0.5
+    damping: 1
+    octaves: 1
+    octaveMultiplier: 0.5
+    octaveScale: 2
+    quality: 2
+    scrollSpeed:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    remap:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    remapY:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    remapZ:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    remapEnabled: 0
+    positionAmount:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    rotationAmount:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    sizeAmount:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  SizeBySpeedModule:
+    enabled: 0
+    curve:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    z:
+      serializedVersion: 2
+      minMaxState: 1
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    range: {x: 0, y: 1}
+    separateAxes: 0
+  RotationBySpeedModule:
+    enabled: 0
+    x:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    y:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    curve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0.7853982
+      minScalar: 0.7853982
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    separateAxes: 0
+    range: {x: 0, y: 1}
+  ColorBySpeedModule:
+    enabled: 0
+    gradient:
+      serializedVersion: 2
+      minMaxState: 1
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    range: {x: 0, y: 1}
+  CollisionModule:
+    enabled: 0
+    serializedVersion: 3
+    type: 0
+    collisionMode: 0
+    colliderForce: 0
+    multiplyColliderForceByParticleSize: 0
+    multiplyColliderForceByParticleSpeed: 0
+    multiplyColliderForceByCollisionAngle: 1
+    plane0: {fileID: 0}
+    plane1: {fileID: 0}
+    plane2: {fileID: 0}
+    plane3: {fileID: 0}
+    plane4: {fileID: 0}
+    plane5: {fileID: 0}
+    m_Dampen:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    m_Bounce:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    m_EnergyLossOnCollision:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    minKillSpeed: 0
+    maxKillSpeed: 10000
+    radiusScale: 1
+    collidesWith:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    maxCollisionShapes: 256
+    quality: 0
+    voxelSize: 0.5
+    collisionMessages: 0
+    collidesWithDynamic: 1
+    interiorCollisions: 0
+  TriggerModule:
+    enabled: 0
+    collisionShape0: {fileID: 0}
+    collisionShape1: {fileID: 0}
+    collisionShape2: {fileID: 0}
+    collisionShape3: {fileID: 0}
+    collisionShape4: {fileID: 0}
+    collisionShape5: {fileID: 0}
+    inside: 1
+    outside: 0
+    enter: 0
+    exit: 0
+    radiusScale: 1
+  SubModule:
+    serializedVersion: 2
+    enabled: 0
+    subEmitters:
+    - serializedVersion: 2
+      emitter: {fileID: 0}
+      type: 0
+      properties: 0
+  LightsModule:
+    enabled: 0
+    ratio: 0
+    light: {fileID: 0}
+    randomDistribution: 1
+    color: 1
+    range: 1
+    intensity: 1
+    rangeCurve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    intensityCurve:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    maxLights: 20
+  TrailModule:
+    enabled: 0
+    mode: 0
+    ratio: 1
+    lifetime:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    minVertexDistance: 0.2
+    textureMode: 0
+    ribbonCount: 1
+    worldSpace: 0
+    dieWithParticles: 1
+    sizeAffectsWidth: 1
+    sizeAffectsLifetime: 0
+    inheritParticleColor: 1
+    generateLightingData: 0
+    splitSubEmitterRibbons: 0
+    colorOverLifetime:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    widthOverTrail:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 1
+      minScalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    colorOverTrail:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+  CustomDataModule:
+    enabled: 0
+    mode0: 0
+    vectorComponentCount0: 4
+    color0:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    colorLabel0: Color
+    vector0_0:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel0_0: X
+    vector0_1:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel0_1: Y
+    vector0_2:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel0_2: Z
+    vector0_3:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel0_3: W
+    mode1: 0
+    vectorComponentCount1: 4
+    color1:
+      serializedVersion: 2
+      minMaxState: 0
+      minColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+    colorLabel1: Color
+    vector1_0:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel1_0: X
+    vector1_1:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel1_1: Y
+    vector1_2:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel1_2: Z
+    vector1_3:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    vectorLabel1_3: W
+--- !u!4 &1640840730
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640840727}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -120.5, y: 4.5, z: 261.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!4 &1646971864 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 6c3721cfa5196e5499ace3f22a24c01f, type: 3}
+  m_PrefabInternal: {fileID: 436303378}
 --- !u!1001 &1674794563
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 69.7
+      value: 64.30946
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8.3
+      value: -76.24342
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 40.8
+      value: 182.43176
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -13518,7 +17456,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_LocalRotation.z
@@ -13530,11 +17468,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 1978637475473510, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
       propertyPath: m_Name
       value: building_05 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8131883cf92c2524cbb428850bc60fa0, type: 2}
@@ -13544,23 +17490,23 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 68
+      value: 62.60947
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57
+      value: -10.94342
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -113.2
+      value: 28.431763
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_LocalRotation.y
@@ -13568,7 +17514,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13576,7 +17522,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -13597,24 +17543,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d659ef7e074af5d499862500d6bd37a9, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &1709395989 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4756829170586760, guid: 8131883cf92c2524cbb428850bc60fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 214576511}
+--- !u!4 &1815704551 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4133646011517346, guid: 3366c576e401dfe48b8d3682909102e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 192854479}
 --- !u!1001 &1819192747
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: 898c1e45be00640448b758851c8fb29d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.4
+      value: -34.79053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 898c1e45be00640448b758851c8fb29d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 56.68241
+      value: -11.261009
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 898c1e45be00640448b758851c8fb29d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -90.8
+      value: 50.831757
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 898c1e45be00640448b758851c8fb29d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -13634,7 +17590,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 898c1e45be00640448b758851c8fb29d, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 898c1e45be00640448b758851c8fb29d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -13655,6 +17611,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 898c1e45be00640448b758851c8fb29d, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &1855613859 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808,
+    type: 2}
+  m_PrefabInternal: {fileID: 206855611}
 --- !u!1 &1860113450
 GameObject:
   m_ObjectHideFlags: 0
@@ -17098,26 +21059,26 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 92.283005, z: 0}
 --- !u!1001 &1870078105
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 66
+      value: 60.60947
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 30.3
+      value: -37.64342
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 82.1
+      value: 223.73175
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_LocalRotation.x
@@ -17137,7 +21098,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1287071463115610, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
       propertyPath: m_Name
@@ -17154,24 +21115,29 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7256e80bf8ddfc94b85b655ebe5e7a92, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1872294833 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808,
+    type: 2}
+  m_PrefabInternal: {fileID: 1300543392}
 --- !u!1001 &1921273320
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 202.2
+      value: 196.80946
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.3
+      value: -59.64342
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 32.8
+      value: 174.43176
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -17179,7 +21145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -17191,33 +21157,45 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_RootOrder
-      value: 47
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1317653839737880, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
       propertyPath: m_Name
       value: building_00 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084076256409134, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9fceb0e2bc1cfd4e86f9d5b4997c49b, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1943224380 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 9368fbc81299cca45896be6eef8d45c0, type: 3}
+  m_PrefabInternal: {fileID: 376112096}
 --- !u!1001 &1960476264
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 400000, guid: 5e8250a355cb6934faa0c1b04bdf3993, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -177
+      value: -182.39053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e8250a355cb6934faa0c1b04bdf3993, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 77.8
+      value: 9.856583
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e8250a355cb6934faa0c1b04bdf3993, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41
+      value: 100.63176
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e8250a355cb6934faa0c1b04bdf3993, type: 3}
       propertyPath: m_LocalRotation.x
@@ -17237,7 +21215,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e8250a355cb6934faa0c1b04bdf3993, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e8250a355cb6934faa0c1b04bdf3993, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -17263,19 +21241,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -180
+      value: -185.39053
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -23.1
+      value: -91.04342
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -90.2
+      value: 51.431763
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.x
@@ -17283,7 +21261,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.z
@@ -17295,11 +21273,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_RootOrder
-      value: 53
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1820856021516862, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_Name
       value: building_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
@@ -17363,19 +21349,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 65.4
+      value: 60.00947
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -13.6
+      value: -81.54342
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 171.2
+      value: 312.83176
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.x
@@ -17383,7 +21369,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_LocalRotation.z
@@ -17395,33 +21381,45 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_RootOrder
-      value: 40
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1820856021516862, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
       propertyPath: m_Name
       value: building_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071655106082950, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6712212bf75cb041908ff4b08fb5808, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &2045426611 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: ec0d9fb58453c364d86b3e5afc9879a0, type: 3}
+  m_PrefabInternal: {fileID: 1305102173}
 --- !u!1001 &2072391788
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 116093643}
     m_Modifications:
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -168.3
+      value: -173.69054
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -77.94342
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 29.9
+      value: 171.53175
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.x
@@ -17429,7 +21427,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_LocalRotation.z
@@ -17441,15 +21439,36 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_RootOrder
-      value: 41
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1606014961688390, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
       propertyPath: m_Name
       value: building_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e808857ae8616b740b8f0d5de8d50c56, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &2091230850 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4550457629358280, guid: e808857ae8616b740b8f0d5de8d50c56,
+    type: 2}
+  m_PrefabInternal: {fileID: 2072391788}
+--- !u!4 &2100585861 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 33c9b083c59976746beea5fcd6740875, type: 3}
+  m_PrefabInternal: {fileID: 862668699}
+--- !u!4 &2107114722 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 528e39c814539434c9e43864a2723622, type: 3}
+  m_PrefabInternal: {fileID: 987764496}
 --- !u!1001 &2116573309
 Prefab:
   m_ObjectHideFlags: 0
@@ -17487,7 +21506,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4116517349265000, guid: 1283c88c5b5a6134199338f60b2fc1bf, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1522725867475768, guid: 1283c88c5b5a6134199338f60b2fc1bf, type: 2}
       propertyPath: m_Name
@@ -17496,3 +21515,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1283c88c5b5a6134199338f60b2fc1bf, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &2119969716 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4433016607828034, guid: 7256e80bf8ddfc94b85b655ebe5e7a92,
+    type: 2}
+  m_PrefabInternal: {fileID: 1870078105}

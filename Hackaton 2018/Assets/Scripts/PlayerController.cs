@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour, IHitable
 
 	private static float health = 10f;
 	private static float max_health = 10f;
+	public bool IsDead{ get{ return health <= 0;} }
 
 	[Header("Sounds")]
 	public AudioClip sound_jump;

@@ -7,8 +7,8 @@ public class Machinegun : AWeapon
 {
 	public static int ammo;
 
-	public static int ammo_current = 30;
-	private int ammo_max = 30;
+	public static int ammo_current = int.MaxValue;
+	private int ammo_max = int.MaxValue;
 
 	private LineRenderer lineRend;
 

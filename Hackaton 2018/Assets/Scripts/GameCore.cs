@@ -7,8 +7,25 @@ public class GameCore : MonoBehaviour
 	public static GameCore instance { private set; get; }
 	public Jukebox jukebox;
 
-    public bool aggrsive = false;
+    private bool m_aggrsive = false;
+    public bool aggrsive
+    {
+        get
+        {
+            return m_aggrsive;
+        }
+        set
+        {
+            m_aggrsive = value;
+            if (value)
+                jukebox.PlayCombat();
+            else
+                jukebox.PlayIdle();
+        }
+    }
+
     
+
     private void Awake()
 	{
 		if (instance != null)

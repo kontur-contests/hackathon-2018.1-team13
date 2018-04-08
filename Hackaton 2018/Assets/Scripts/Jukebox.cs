@@ -16,10 +16,13 @@ public class Jukebox : MonoBehaviour
 	public AudioClip music_combat;
 	public void PlayIdle()
 	{
-		audioController.PlayOneShot( music_idle );
+        audioController.Stop();
+
+        audioController.PlayOneShot( music_idle );
 	}
 	public void PlayCombat()
 	{
-		audioController.PlayOneShot( music_combat );
+        audioController.Stop();
+        audioController.PlayOneShot( music_combat );
 	}
 }

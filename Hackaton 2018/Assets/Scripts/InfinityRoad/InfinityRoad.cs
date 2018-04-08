@@ -41,5 +41,7 @@ public class InfinityRoad : MonoBehaviour {
 		newBlock.offsetPosition = new Vector3 (Random.Range (0, maximumMove), 0, Random.Range (0, maximumMove));
 
 		newBlock.transform.SetParent (gameObject.transform);
+
+		newBlock.transform.localScale = new Vector3 (3, 3, 3);
 	}
 }

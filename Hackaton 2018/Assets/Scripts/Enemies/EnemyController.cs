@@ -57,7 +57,8 @@ public class EnemyController : MonoBehaviour
 			}
 
             if (capsule != null)
-			    capsule.gameObject.layer = LayerMask.NameToLayer("Ignore");
+				capsule.enabled = false;
+			    // capsule.gameObject.layer = LayerMask.NameToLayer("Ignore");
 
             if (animator != null)
                 animator.enabled = false;

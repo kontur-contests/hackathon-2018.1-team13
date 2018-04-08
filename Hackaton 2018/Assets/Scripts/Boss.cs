@@ -18,5 +18,6 @@ public class Boss : EnemyController
 	public void Wake()
 	{
 		animator.SetTrigger("wake");
+		audioController.Play();
 	}
 }

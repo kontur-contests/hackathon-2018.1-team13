@@ -164,7 +164,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4646d054bd0a2b04485631bf9e7f2cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music_idle: {fileID: 8300000, guid: 49fca2e3a9bfb494cb5e5d7e6f5c74f6, type: 3}
+  music_idle: {fileID: 8300000, guid: d72c6e82ebd5c474d932d9c6e95beeb2, type: 3}
   music_combat: {fileID: 8300000, guid: efdbac32e500f664a9f7f63fdcd58a53, type: 3}
 --- !u!114 &114752199402746256
 MonoBehaviour:
@@ -278,4 +278,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jukebox: {fileID: 0}
-  aggrsive: 0

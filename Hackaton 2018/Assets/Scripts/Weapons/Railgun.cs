@@ -108,6 +108,11 @@ public class Railgun : AWeapon
 
 	private void Update()
 	{
+        Color color = PlayerController.instance.HeatIndicator.color;
+        color.a = 0;
+        PlayerController.instance.HeatIndicator.color = color;
+		return;
+
         if (Overheated)
         {
             if (!inAction)

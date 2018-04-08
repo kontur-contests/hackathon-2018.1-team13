@@ -133,7 +133,7 @@ public class Drone : EnemyController
         var vel = ragdoll.velocity;
        
         var distSqMag = relativePos.sqrMagnitude;
-        if (distSqMag < detectDistanceSqr)
+        if (distSqMag > detectDistanceSqr)
             return;
         var sqDisToRange = distSqMag - targetDistanceSqr;
 

@@ -15,11 +15,14 @@ public class Soldier : EnemyController
 	public EnumWeapon eWeapon = EnumWeapon.revolver;
 	private EnemyWeapon weapon;
 
+	public LineRenderer lineRend;
+
 	private void Awake()
 	{
 		agent = GetComponent<NavMeshAgent>();
 		animator = GetComponent<Animator>();
 		capsule = GetComponent<Collider>();
+		lineRend = GetComponentInChildren<LineRenderer>();
 
 		startPos = transform.position;
 
@@ -167,6 +170,9 @@ public class Soldier : EnemyController
 
 		Vector3 direction = Spread(w.spread) * (target - pointCenter);
 		Ray ray = new Ray(pointCenter, direction);
+		lineRend.enabled = true;
+		lineRend.SetPosition(0, lineRend.transform.position);
+		lineRend.SetPosition(1, pointCenter + direction * 5);
 
 		// Debug.DrawRay(pointCenter, direction, Color.green, 2f);
 		//Debug.Log("shoot");
@@ -175,6 +181,7 @@ public class Soldier : EnemyController
 		RaycastAttack(ray, weapon.damage, weapon.range);
 
 		yield return new WaitForSeconds(1 - w.delay);
+		lineRend.enabled = false;
 		behaviuor = Behaviour.idle;
 	}
 

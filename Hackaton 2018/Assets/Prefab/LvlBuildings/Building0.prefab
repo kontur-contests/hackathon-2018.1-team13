@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 33381447473567708}
   - component: {fileID: 65663378127199464}
   - component: {fileID: 23447581295310414}
+  - component: {fileID: 114754377759094586}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -310,6 +311,7 @@ GameObject:
   - component: {fileID: 33038810582654460}
   - component: {fileID: 65968456336217306}
   - component: {fileID: 23484192576956866}
+  - component: {fileID: 114337028902535570}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -325,6 +327,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4888385158243868}
+  - component: {fileID: 114535055930239684}
   m_Layer: 0
   m_Name: Building0
   m_TagString: Untagged
@@ -376,6 +379,7 @@ GameObject:
   - component: {fileID: 33660869468297716}
   - component: {fileID: 65633611999101318}
   - component: {fileID: 23285956515651010}
+  - component: {fileID: 114411684335590262}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -394,6 +398,7 @@ GameObject:
   - component: {fileID: 33743798518034386}
   - component: {fileID: 65897982679880674}
   - component: {fileID: 23931298626694648}
+  - component: {fileID: 114611895573510720}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1220,7 +1225,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 08806b459700cd04fba859c515a235be, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2278,3 +2283,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114337028902535570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641118808930956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114411684335590262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750555554289444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114535055930239684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1663776653550872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 2
+--- !u!114 &114611895573510720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1791385478733236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114754377759094586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127863672607148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4

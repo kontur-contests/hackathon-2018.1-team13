@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33041570054887076}
   - component: {fileID: 65003367127548068}
   - component: {fileID: 23161147864661336}
+  - component: {fileID: 208159317438603546}
+  - component: {fileID: 114347058029516968}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -40,6 +42,7 @@ GameObject:
   - component: {fileID: 33093040645611940}
   - component: {fileID: 65641249430912904}
   - component: {fileID: 23721480490029914}
+  - component: {fileID: 114127374751262274}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -94,6 +97,7 @@ GameObject:
   - component: {fileID: 33512205740342670}
   - component: {fileID: 65095870934131306}
   - component: {fileID: 23601339423071380}
+  - component: {fileID: 114535586333935098}
   m_Layer: 0
   m_Name: Floor (1)
   m_TagString: Untagged
@@ -112,6 +116,7 @@ GameObject:
   - component: {fileID: 33777717573525578}
   - component: {fileID: 65111760124519586}
   - component: {fileID: 23396169818563336}
+  - component: {fileID: 114245296317537150}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -130,6 +135,7 @@ GameObject:
   - component: {fileID: 33227646737422694}
   - component: {fileID: 65962457492579336}
   - component: {fileID: 23247983187352940}
+  - component: {fileID: 114591176327187996}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -166,6 +172,7 @@ GameObject:
   - component: {fileID: 33814575453782062}
   - component: {fileID: 65218406635751610}
   - component: {fileID: 23346691140916570}
+  - component: {fileID: 114490366324552438}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -268,6 +275,7 @@ GameObject:
   - component: {fileID: 33935357148010484}
   - component: {fileID: 65321230065207738}
   - component: {fileID: 23563758984613094}
+  - component: {fileID: 114119045205884010}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -286,6 +294,7 @@ GameObject:
   - component: {fileID: 33581058624080846}
   - component: {fileID: 65495552358969668}
   - component: {fileID: 23684479575743276}
+  - component: {fileID: 114836641228116660}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -304,6 +313,7 @@ GameObject:
   - component: {fileID: 33647945127149836}
   - component: {fileID: 65124309754348900}
   - component: {fileID: 23748774844213772}
+  - component: {fileID: 114522655394423594}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -400,7 +410,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190060678033874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -89.51, y: 12.89, z: -24.12}
+  m_LocalPosition: {x: -89.51, y: 12.89, z: -24.73}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4311468182605872}
@@ -1627,3 +1637,126 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114119045205884010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1808372175529390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114127374751262274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085062267109296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114245296317537150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324597710289588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114347058029516968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075648165041904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114490366324552438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1406986668414656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114522655394423594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880291746148402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114535586333935098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190060678033874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114591176327187996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1351258207952784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!114 &114836641228116660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877248895275250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1ee27a7a1a8d4f9a1c13b70fd2ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: 4
+--- !u!208 &208159317438603546
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075648165041904}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

@@ -1284,14 +1284,12 @@ MonoBehaviour:
   weaponSpread: 0.5
   m_spamText: {fileID: 114774531180525320}
   m_background: {fileID: 114988491745344262}
+  m_display: {fileID: 1810114387140760}
   m_showTime: 0.5
   m_hideTime: 0.1
   spamText:
   - BUY
   - BITCOINS
-  aggroText:
-  - DIE
-  - SUFFER
 --- !u!114 &114774531180525320
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -297,22 +297,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1411741244904128
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4181242287386252}
-  - component: {fileID: 120580668024640032}
-  m_Layer: 5
-  m_Name: LineRenderer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &1436369504821998
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +479,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1872615837016430
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4892325109537986}
+  - component: {fileID: 120578794525996338}
+  m_Layer: 0
+  m_Name: LineRenderer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1921424346478976
 GameObject:
   m_ObjectHideFlags: 1
@@ -626,19 +626,6 @@ Transform:
   m_Father: {fileID: 4236751619595760}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4181242287386252
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1411741244904128}
-  m_LocalRotation: {x: -0.7978234, y: 0.1981551, z: 0.2021397, w: -0.53230816}
-  m_LocalPosition: {x: -0.161, y: -0.239, z: -0.071}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4518007559866328}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50.288002, y: -123.385, z: -123.728004}
 --- !u!4 &4236751619595760
 Transform:
   m_ObjectHideFlags: 1
@@ -781,7 +768,7 @@ Transform:
   m_LocalPosition: {x: -0.07285652, y: 0.003982544, z: -0.012641601}
   m_LocalScale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
   m_Children:
-  - {fileID: 4181242287386252}
+  - {fileID: 4892325109537986}
   m_Father: {fileID: 4595283857769220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1007,6 +994,19 @@ Transform:
   m_Father: {fileID: 4236751619595760}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4892325109537986
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1872615837016430}
+  m_LocalRotation: {x: -0.021322213, y: -0.051998433, z: 0.27824816, w: -0.9588637}
+  m_LocalPosition: {x: -0.076, y: -0.349, z: -0.098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4518007559866328}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -7, y: 0, z: 0}
 --- !u!4 &4949831044685956
 Transform:
   m_ObjectHideFlags: 1
@@ -1325,6 +1325,7 @@ MonoBehaviour:
   see: 0
   behaviuor: 0
   eWeapon: 2
+  lineRend: {fileID: 0}
 --- !u!114 &114117778931398744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1479,13 +1480,13 @@ MonoBehaviour:
   particle: 1
   setKinimatick: 1
   damage_mod: 0.7
---- !u!120 &120580668024640032
+--- !u!120 &120578794525996338
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1411741244904128}
-  m_Enabled: 1
+  m_GameObject: {fileID: 1872615837016430}
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1515,10 +1516,10 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 4}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.05
+    widthMultiplier: 0.01
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1533,8 +1534,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 0}
+      key0: {r: 1, g: 0, b: 0, a: 0}
+      key1: {r: 1, g: 0.8482758, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1551,7 +1552,7 @@ LineRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 0
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0

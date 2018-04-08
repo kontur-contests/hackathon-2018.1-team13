@@ -12,20 +12,28 @@ public class SpamDrone : Drone
     Image m_background;
 
     [SerializeField]
+    GameObject m_display;
+
+    [SerializeField]
     float m_showTime = 20;
 
     [SerializeField]
     float m_hideTime = 0.2f;
 
+    [SerializeField]
+    int m_threatsTillAttack = 6;
+
     float curTimer = 0;
 
     int spamIndex = 0;
+
+    int threatCounter = 0;
 
     bool shown = true;
 
     public string[]  spamText = {"BUY", "BITCOINS" } ;
 
-    public string[] aggroText = { "DIE", "SUFFER" };
+    private static string[] aggroText = { "DIE", "SUFFER" };
 
     private void Start()
     {
@@ -35,14 +43,26 @@ public class SpamDrone : Drone
 
     protected override bool IsAgressive()
     {
-        return false;
-        //return base.IsAgressive() && GameCore.instance.aggrsive;
+        return base.IsAgressive() && fullAgressor;
     }
 
+    bool fullAgressor = false;
 
     protected  override void Update()
     {
         base.Update();
+
+        if (fullAgressor)
+            return;
+
+        if (threatCounter > m_threatsTillAttack)
+        {
+            m_display.SetActive(false);
+            droneAnimator.SetInteger("State", 2);
+            fullAgressor = true;
+            return;
+        }
+
         curTimer -= Time.deltaTime;
         if (curTimer < 0)
         {
@@ -69,7 +89,8 @@ public class SpamDrone : Drone
     }
 
     void ShowText()
-    {
+    {   
+
         if (!GameCore.instance.aggrsive)
         {
             spamIndex = (spamIndex + 1) % spamText.Length;
@@ -79,6 +100,7 @@ public class SpamDrone : Drone
         {
             spamIndex = (spamIndex + 1) % aggroText.Length;
             m_spamText.text = aggroText[spamIndex];
+            threatCounter++;
         }
 
         shown = true;

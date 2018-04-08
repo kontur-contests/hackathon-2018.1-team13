@@ -36,7 +36,19 @@ public class Machinegun : AWeapon
 		base.Awake();
 	}
 
-    private bool cooling;
+    private bool m_cooling;
+    private bool cooling
+    {
+        get
+        {
+            return m_cooling;
+        }
+        set
+        {
+            m_cooling = value;
+            animator.SetBool("cooling", value);
+        }
+    }
 
     private bool Overheated
     {
@@ -111,7 +123,7 @@ public class Machinegun : AWeapon
 		animator.SetTrigger("fire");
 		lineRend.enabled = true;
 		lineRend.SetPosition(0, lineRend.transform.position);
-		lineRend.SetPosition(1, ray.origin + ray.direction);
+		lineRend.SetPosition(1, ray.origin + ray.direction * 5);
 		Debug.Log("shoot");
 
 		RaycastHit[] hitInfo = Physics.RaycastAll(ray);

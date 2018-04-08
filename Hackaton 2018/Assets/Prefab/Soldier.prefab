@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 54197386724006742}
   - component: {fileID: 195489530675581378}
   - component: {fileID: 114021944122278334}
+  - component: {fileID: 82922432011647912}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Untagged
@@ -1292,6 +1293,86 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2275021, y: 0.25107372, z: 0.32350945}
   m_Center: {x: -0.11375109, y: 0.021858364, z: 0.000000044703484}
+--- !u!82 &82922432011647912
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516102610195586}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95662477506609626
 Animator:
   serializedVersion: 3
@@ -1323,9 +1404,11 @@ MonoBehaviour:
   health: 5
   aware: 0
   see: 0
+  sound_hit: {fileID: 8300000, guid: 7a25356e49571994e993b2688f74a6c3, type: 3}
   behaviuor: 0
   eWeapon: 2
   lineRend: {fileID: 0}
+  sound_shoot: {fileID: 8300000, guid: 445297d0403080344b482e36af427df7, type: 3}
 --- !u!114 &114117778931398744
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour, IHitable
 	[Header("Sounds")]
 	public AudioClip sound_jump;
 	public AudioClip sound_land;
+	public AudioClip sound_hit;
 
 	private void Awake()
 	{
@@ -264,17 +265,28 @@ public class PlayerController : MonoBehaviour, IHitable
 	#region IHitable
 	public void OnHit(AttackInfo aInfo)
 	{
+		if (health <= 0 ) return;
 		health -= aInfo.damage;
 		if (health > 0)
 		{
-			m_cameraRot *= Quaternion.Euler(Random.Range(-15f, 1f), 0, 0);
+			m_cameraRot *= Quaternion.Euler(Random.Range(-5f, 1f), 0, 0);
 			m_characterRot *= Quaternion.Euler(0, Random.Range(-10f, 10f), 0);
 			//Debug.Log("Got Hit");
+			if (audioController)
+				audioController.PlayOneShot(sound_hit);
 		}
 		else
 		{
 			//Debug.Log("Diez");
+			StartCoroutine( Respawn() );
 		}
 	}
 	#endregion
+
+	private IEnumerator Respawn()
+	{
+		yield return new WaitForSeconds(1f);
+		UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+		yield return null;
+	}
 }

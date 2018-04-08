@@ -2415,6 +2415,7 @@ MonoBehaviour:
   - {fileID: 114593606938802300}
   sound_jump: {fileID: 8300000, guid: cc047a8defbd1144184a2cba18486268, type: 3}
   sound_land: {fileID: 8300000, guid: 3c9fbe059e3258e4aacd2de527e92eae, type: 3}
+  sound_hit: {fileID: 8300000, guid: 7a25356e49571994e993b2688f74a6c3, type: 3}
   speedNormal: 3
   speedSprint: 5
   speedCrouch: 2

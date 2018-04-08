@@ -17,6 +17,8 @@ public class Soldier : EnemyController
 
 	public LineRenderer lineRend;
 
+	public AudioClip sound_shoot;
+
 	private void Awake()
 	{
 		agent = GetComponent<NavMeshAgent>();
@@ -173,6 +175,8 @@ public class Soldier : EnemyController
 		lineRend.enabled = true;
 		lineRend.SetPosition(0, lineRend.transform.position);
 		lineRend.SetPosition(1, pointCenter + direction * 5);
+		if (audioController)
+			audioController.PlayOneShot(sound_shoot);
 
 		// Debug.DrawRay(pointCenter, direction, Color.green, 2f);
 		//Debug.Log("shoot");

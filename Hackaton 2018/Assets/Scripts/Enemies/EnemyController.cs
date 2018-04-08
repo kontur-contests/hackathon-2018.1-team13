@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
 	protected NavMeshAgent agent;
 	protected Animator animator;
 	protected Collider capsule;
+	protected AudioSource audioController;
 
 	[SerializeField]
 	protected float health = 5;
@@ -25,9 +26,12 @@ public class EnemyController : MonoBehaviour
 	protected Vector3 lastDetectedPos;
 	protected Vector3 pointCenter	{	get	{	return transform.position + Vector3.up * agent.height * 0.5f;	}	}
 
+	public AudioClip sound_hit;
+
 	private void Start()
 	{
 		capsule = GetComponent<Collider>();
+		audioController = GetComponent<AudioSource>();
 	}
 
 	public virtual bool OnTakeDamage(BodyPart part, AttackInfo aInfo)
@@ -38,6 +42,9 @@ public class EnemyController : MonoBehaviour
 		health -= aInfo.damage;
 		if (health > 0)
 		{
+			if (audioController)
+				audioController.PlayOneShot(sound_hit);
+
 			aware = true;
 			awareness = 10;
 			lastDetectedPos = PlayerController.instance.transform.position;

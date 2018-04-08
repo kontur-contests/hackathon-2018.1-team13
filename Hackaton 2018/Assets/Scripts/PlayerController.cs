@@ -286,6 +286,7 @@ public class PlayerController : MonoBehaviour, IHitable
 	private IEnumerator Respawn()
 	{
 		yield return new WaitForSeconds(1f);
+		health = max_health;
 		UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 		yield return null;
 	}

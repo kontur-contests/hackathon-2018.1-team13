@@ -32,7 +32,7 @@ public class GameCore : MonoBehaviour
 			Destroy(this.gameObject);
 		else
 		{
-			DontDestroyOnLoad(gameObject);
+			// DontDestroyOnLoad(gameObject);
 			instance = this;
 		}
 	}

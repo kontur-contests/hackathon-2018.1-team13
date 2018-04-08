@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4084076256409134}
   - component: {fileID: 33113586907946222}
   - component: {fileID: 23086249143113052}
+  - component: {fileID: 65024581743025026}
+  - component: {fileID: 208864707389588160}
   m_Layer: 0
   m_Name: building_00
   m_TagString: Untagged
@@ -34,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317653839737880}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 122.1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -49, y: -50, z: 30.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,3 +84,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317653839737880}
   m_Mesh: {fileID: 4300000, guid: 3f6bc0ec5b94c9d4690135dc87bd9091, type: 3}
+--- !u!65 &65024581743025026
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317653839737880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 35.47148, y: 37.61094, z: 174.76593}
+  m_Center: {x: -3.1513352, y: 1.229995, z: 39.557713}
+--- !u!208 &208864707389588160
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317653839737880}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 17.736, y: 18.805, z: 87.383}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: -3.1510003, y: 1.23, z: 39.558002}
+  m_TimeToStationary: 0.5

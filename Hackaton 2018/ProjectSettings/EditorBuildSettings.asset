@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ShooterTestMap.unity
+    guid: e04cd21a25f9a1e4e954f02d9da3a0bb
+  - enabled: 1
+    path: Assets/InfinityRoad.unity
+    guid: defbe27c69638485eb4df1e4a4b89176

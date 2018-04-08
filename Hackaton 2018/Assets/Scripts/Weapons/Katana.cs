@@ -51,20 +51,14 @@ public class Katana : AWeapon
 		//lineRend.SetPosition(0, lineRend.transform.position);
 		//lineRend.SetPosition(1, ray.origin + ray.direction);
 
-		RaycastHit[] hitInfo = Physics.RaycastAll(ray);
-		hitInfo = hitInfo.OrderBy((x) => x.distance).ToArray();
+		RaycastHit[] hitInfo = Physics.SphereCastAll(origin, 1, direction, 1);
 		foreach (RaycastHit hit in hitInfo)
 		{
-			if (hit.distance > distance)
-				break;
-
 			IHitable hitable = hit.transform.GetComponent<IHitable>();
 			if (hitable != null && (Object)hitable != PlayerController.instance)
 			{
 				AttackInfo aInfo = new AttackInfo(damage, direction, hit.point, hit.normal);
 				hitable.OnHit(aInfo);
-				if (aInfo.blocked)
-					break;
 			}
 		}
 

@@ -96,6 +96,11 @@ public class PlayerController : MonoBehaviour, IHitable
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
 		}
+
+		if ( health < max_health )
+		{
+			health += 0.01f;
+		}
 	}
 
 	private void Update()

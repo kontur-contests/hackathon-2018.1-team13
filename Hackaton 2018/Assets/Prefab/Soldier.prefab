@@ -1401,7 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339aedc1ee55281439b34e6ae395434c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 4
   aware: 0
   see: 0
   sound_hit: {fileID: 8300000, guid: 7a25356e49571994e993b2688f74a6c3, type: 3}
@@ -1409,6 +1409,7 @@ MonoBehaviour:
   eWeapon: 2
   lineRend: {fileID: 0}
   sound_shoot: {fileID: 8300000, guid: 445297d0403080344b482e36af427df7, type: 3}
+  awarenessCoef: 1
 --- !u!114 &114117778931398744
 MonoBehaviour:
   m_ObjectHideFlags: 1

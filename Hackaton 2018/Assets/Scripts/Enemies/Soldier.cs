@@ -18,6 +18,8 @@ public class Soldier : EnemyController
 	public LineRenderer lineRend;
 
 	public AudioClip sound_shoot;
+	
+	public float awarenessCoef = 1f;
 
 	private void Awake()
 	{
@@ -228,7 +230,7 @@ public class Soldier : EnemyController
 		if (hits > 0)
 		{
 			if (awareness < awareMax)
-				awareness += hits * Time.deltaTime * 0.5f;
+				awareness += hits * Time.deltaTime * 0.5f * awarenessCoef;
 			return true;
 		}
 		else

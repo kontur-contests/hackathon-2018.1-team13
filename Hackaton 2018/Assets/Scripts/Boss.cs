@@ -8,6 +8,7 @@ public class Boss : EnemyController
 	void Start ()
 	{
 		animator = GetComponent<Animator>();
+		audioController = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -18,6 +19,6 @@ public class Boss : EnemyController
 	public void Wake()
 	{
 		animator.SetTrigger("wake");
-		audioController.Play();
+		audioController.PlayOneShot( audioController.clip );
 	}
 }

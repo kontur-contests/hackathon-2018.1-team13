@@ -6,7 +6,7 @@ using System.Linq;
 public class Katana : AWeapon
 {
 	public AudioClip sound_ready;
-
+	
 	private void OnEnable()
 	{
 		audio.PlayOneShot( sound_ready );

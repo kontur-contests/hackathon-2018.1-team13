@@ -11464,10 +11464,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4136379871565704, guid: dd2935efce4df77428978d84c0ba3a82, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd2935efce4df77428978d84c0ba3a82, type: 2}
   m_IsPrefabParent: 0
@@ -11977,11 +11973,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114226552426006186, guid: 955dcebbe40ad9a4c8f8989b160c9093,
-        type: 2}
-      propertyPath: music_idle
-      value: 
-      objectReference: {fileID: 8300000, guid: d72c6e82ebd5c474d932d9c6e95beeb2, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 955dcebbe40ad9a4c8f8989b160c9093, type: 2}
   m_IsPrefabParent: 0

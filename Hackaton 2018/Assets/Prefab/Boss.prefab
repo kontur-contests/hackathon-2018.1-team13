@@ -549,6 +549,7 @@ GameObject:
   - component: {fileID: 23405111658544370}
   - component: {fileID: 54609773227254486}
   - component: {fileID: 65133743217847094}
+  - component: {fileID: 135853759752837956}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -3065,6 +3066,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: 4
   fragile: 0
+--- !u!135 &135853759752837956
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752137755353486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.00000011920932, y: 0.00000047683744, z: 1.6466514}
 --- !u!136 &136029915268569766
 CapsuleCollider:
   m_ObjectHideFlags: 1

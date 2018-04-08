@@ -99,7 +99,7 @@ public class Machinegun : AWeapon
     }
 	
 	float spread = 1.5f;
-	float damage = 1f;
+	float damage = 2f;
 	float recoil = 3f;
     float effectTime = 0.01f;
 	float cooldown = 0.15f;

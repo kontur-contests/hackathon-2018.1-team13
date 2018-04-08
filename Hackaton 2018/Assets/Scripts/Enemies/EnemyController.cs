@@ -12,10 +12,10 @@ public class EnemyController : MonoBehaviour
 	protected AudioSource audioController;
 
 	[SerializeField]
-	protected float health = 5;
+	protected float health = 4;
 	protected bool dead = false;
 
-	protected float visionRange = 5f;
+	protected float visionRange = 30f;
 	[SerializeField]
 	protected bool aware = false;
 	[SerializeField]

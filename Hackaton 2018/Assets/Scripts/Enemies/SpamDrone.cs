@@ -37,7 +37,7 @@ public class SpamDrone : Drone
 
     private void Start()
     {
-        spamIndex = Random.Range(0, spamText.Length);
+        //spamIndex = Random.Range(0, spamText.Length);
         droneAnimator.SetInteger("State", 0);
     }
 
@@ -52,7 +52,7 @@ public class SpamDrone : Drone
     {
         base.Update();
 
-        if (fullAgressor)
+        if (fullAgressor || !inFireRange)
             return;
 
         if (threatCounter > m_threatsTillAttack)

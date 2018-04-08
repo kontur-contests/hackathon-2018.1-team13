@@ -124,7 +124,7 @@ public class Drone : EnemyController
     }
 
 
-    bool inFireRange = false;
+     protected bool inFireRange = false;
 
     void MoveToTarget()
     {

@@ -135,11 +135,12 @@ public class Drone : EnemyController
         var distSqMag = relativePos.sqrMagnitude;
         if (distSqMag > detectDistanceSqr)
             return;
+
         var sqDisToRange = distSqMag - targetDistanceSqr;
 
         inFireRange = distSqMag < fireRange;
 
-        var targetLinVel = Vector3.Lerp(ragdoll.velocity, relativePos.normalized * sqDisToRange, Time.deltaTime * moveForce);
+        var targetLinVel = Vector3.Lerp(ragdoll.velocity, relativePos.normalized * Mathf.Clamp(-distSqMag/10, sqDisToRange,distSqMag/10), Time.deltaTime * moveForce);
 
         //ragdoll.velocity = new Vector3(Mathf.Clamp(targetLinVel.y, -speedClamp, speedClamp), vel.y, Mathf.Clamp(targetLinVel.z, -speedClamp, speedClamp));
         //ragdoll.velocity = new Vector3(targetLinVel.x, Mathf.Clamp( vel.y, -speedClamp, speedClamp), targetLinVel.z);

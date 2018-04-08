@@ -693,7 +693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1867227807657976
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4012369439118766
 Transform:
   m_ObjectHideFlags: 1
@@ -1363,7 +1363,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1727522912243046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.570234, y: 2.6066651, z: 10.206304}
+  m_LocalPosition: {x: 33.602856, y: 22, z: -150.77176}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4932928368112024}
@@ -2417,7 +2417,7 @@ MonoBehaviour:
   sound_land: {fileID: 8300000, guid: 3c9fbe059e3258e4aacd2de527e92eae, type: 3}
   sound_hit: {fileID: 8300000, guid: 7a25356e49571994e993b2688f74a6c3, type: 3}
   speedNormal: 3
-  speedSprint: 5
+  speedSprint: 7
   speedCrouch: 2
   jumpPower: 5
   gravityPull: 7

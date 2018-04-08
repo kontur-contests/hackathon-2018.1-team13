@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour, IHitable
 			return transform.position + Vector3.up * (characterController.height * 0.5f + characterController.center.y - 0.20f);	}	}
 
 	[Header("Weapons")]
-	private int current_weapon = 1;
+	private int current_weapon = 2;
 	public AWeapon[] weapons;
 
 	private static float health = 10f;

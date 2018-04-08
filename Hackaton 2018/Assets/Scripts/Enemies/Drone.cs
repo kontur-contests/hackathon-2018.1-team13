@@ -34,6 +34,10 @@ public class Drone : EnemyController
     [SerializeField]
     float targetDistanceSqr = 9;
 
+
+    [SerializeField]
+    float detectDistanceSqr = 72;
+
     [SerializeField]
     float moveForce = 1;
 
@@ -127,7 +131,10 @@ public class Drone : EnemyController
         //Don't move on hit
         Vector3 relativePos = moveTarget.position - gameObject.transform.position;
         var vel = ragdoll.velocity;
+       
         var distSqMag = relativePos.sqrMagnitude;
+        if (distSqMag < detectDistanceSqr)
+            return;
         var sqDisToRange = distSqMag - targetDistanceSqr;
 
         inFireRange = distSqMag < fireRange;

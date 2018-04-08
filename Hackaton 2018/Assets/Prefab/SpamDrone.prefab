@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54812176770783650}
   - component: {fileID: 114369750701275818}
   - component: {fileID: 114843084723195098}
+  - component: {fileID: 82986577873806546}
   m_Layer: 0
   m_Name: SpamDrone
   m_TagString: Untagged
@@ -1199,6 +1200,86 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!82 &82986577873806546
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1001589675013838}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 014f05ae9e027ac40a95a2fb00d3a99a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95719423569735672
 Animator:
   serializedVersion: 3
@@ -1268,6 +1349,7 @@ MonoBehaviour:
   aware: 0
   see: 0
   shootingPoint: {fileID: 4882607341593280}
+  lineRend: {fileID: 120273361849971306, guid: 83960a222b54e5f4e97f254612322b01, type: 2}
   curForce: 10
   droneAnimator: {fileID: 95719423569735672}
   forceAdjStep: 2
@@ -1282,11 +1364,16 @@ MonoBehaviour:
   hoverHeight: 5
   fireRange: 34
   weaponSpread: 0.5
+  weaponDmg: 0.5
+  weaponRange: 10
+  weaponReloadSec: 3
+  weaponFireRate: 0.23
   m_spamText: {fileID: 114774531180525320}
   m_background: {fileID: 114988491745344262}
   m_display: {fileID: 1810114387140760}
   m_showTime: 0.5
   m_hideTime: 0.1
+  m_threatsTillAttack: 6
   spamText:
   - BUY
   - BITCOINS

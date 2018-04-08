@@ -11,6 +11,8 @@ public class Drone : EnemyController
 
     Transform moveTarget;
 
+    public LineRenderer lineRend;
+
     [SerializeField]
     float curForce = 10;
 
@@ -38,6 +40,8 @@ public class Drone : EnemyController
     [SerializeField]
     float speedClamp = 1;
 
+
+
     [SerializeField]
     float maxAngularVelocity = 50;
 
@@ -63,8 +67,10 @@ public class Drone : EnemyController
         return true;
     }
 
+    private AudioSource m_audio;
     protected virtual void Awake()
     {
+        m_audio = GetComponent<AudioSource>();
         ragdoll = GetComponent<Rigidbody>();
         aimTarget = GameObject.Find("Player").transform;
         droneAnimator.SetInteger("State", 1);
@@ -137,7 +143,9 @@ public class Drone : EnemyController
     protected virtual void Update()
     {
         if (dead)
-            return;
+        {
+           return;
+        }
         //aim
 
         var rotStep = Time.deltaTime * lookAtSpeed;
@@ -159,17 +167,44 @@ public class Drone : EnemyController
     [SerializeField]
     private float weaponSpread = 0.5f;
 
+    [SerializeField]
+    private float weaponDmg = 0.5f;
+
+    [SerializeField]
+    private float weaponRange = 10f;
+
+    [SerializeField]
+    private float weaponReloadSec = 3f;
+
+    [SerializeField]
+    private float weaponFireRate = 0.23f;
+
     protected IEnumerator Attack()
     {
         droneState = State.Attack;
-
-        yield return new WaitForSeconds(0.3f);
-
-        Vector3 direction = Spread(weaponSpread) * transform.forward;
-        Ray ray = new Ray(shootingPoint.position, direction);
-        Debug.DrawRay(shootingPoint.position, direction, Color.green, 2f);
-        RaycastAttack(ray, 1, 10);
         yield return new WaitForSeconds(1);
+
+        for (int i = 0; i < 3; i++)
+        {
+            yield return new WaitForSeconds(weaponFireRate);
+
+            Vector3 direction = Spread(weaponSpread) * transform.forward;
+            Ray ray = new Ray(shootingPoint.position, direction);
+            RaycastAttack(ray, weaponDmg, weaponRange);
+            var rend = Instantiate(lineRend);
+            m_audio.Play();
+            rend.transform.position = shootingPoint.transform.position;
+            rend.enabled = true;
+            rend.SetPosition(0, rend.transform.position);
+            rend.SetPosition(1, shootingPoint.position + direction * 5);
+            
+            Destroy(rend, 1);
+        }
+
+        droneState = State.Wait;
+
+        yield return new WaitForSeconds(weaponReloadSec - 1);
+
         Debug.Log("Pew");
         droneState = State.Idle;
     }

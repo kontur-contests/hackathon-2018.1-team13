@@ -8,7 +8,7 @@ public class Block : MonoBehaviour{
 	public Vector3 offsetPosition = new Vector3(0,0,0);
 	public float maxPosition;
 	public InfinityRoad road;
-	public bool notMoveByZ;
+	public bool notMoveByZ = false;
 
 	public void Move( float dPosition )
 	{

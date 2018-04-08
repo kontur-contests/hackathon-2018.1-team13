@@ -37,7 +37,7 @@ public class InfinityRoad : MonoBehaviour {
 		float maximumRotation = Mathf.Clamp( ( position + BaseRoad.instance.realPosition ) * 0.04f, 0, 45f);
 		float maximumMove = Mathf.Clamp( distance + ( position + BaseRoad.instance.realPosition ) * entropy, 0, 100f);
 
-		newBlock.transform.Rotate (new Vector3( Random.Range (0, maximumRotation), Random.Range (0, maximumRotation * 6), 0));
+		newBlock.transform.Rotate (new Vector3( Random.Range (0, maximumRotation ), Random.Range (0, maximumRotation * 6), 0));
 		newBlock.offsetPosition = new Vector3 (Random.Range (0, maximumMove), 0, Random.Range (0, maximumMove));
 
 		newBlock.transform.SetParent (gameObject.transform);

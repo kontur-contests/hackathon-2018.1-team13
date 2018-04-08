@@ -55,6 +55,5 @@ public class BaseRoad : MonoBehaviour {
 			instance = this;
 		else
 			Destroy (gameObject);
-		DontDestroyOnLoad (this);
 	}
 }

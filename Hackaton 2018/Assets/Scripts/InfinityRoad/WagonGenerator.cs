@@ -17,9 +17,4 @@ public class WagonGenerator : MonoBehaviour {
 			wagon.transform.SetParent (gameObject.transform);
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
